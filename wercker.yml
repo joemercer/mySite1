@@ -1,0 +1,25 @@
+box: wercker/nodejs
+# Build definition
+build:
+  # The steps that will be executed on build
+  steps:
+    # A step that executes `npm install` command
+    - npm-install
+    # A step that executes `npm test` command
+    - npm-test
+
+    # A step that will run pre-build grunt tasks
+    - grunt:
+        tasks: less uglify
+
+    # A custom script step, name value is used in the UI
+    # and the code value contains the command that get executed
+    - script:
+        name: wintersmith build
+        code: ./node_modules/.bin/wintersmith build -o ./build
+deploy:
+  steps:
+    - lukevivier/gh-pages:
+        token: $GH_TOKEN
+        basedir: build
+        domain: joemercer.com
