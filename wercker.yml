@@ -32,4 +32,4 @@ deploy:
             git init
             git add .
             git commit -m "deploy commit from $WERCKER_STARTED_BY"
-            git push -f $GIT_REMOTE master:gh-pages
+            git push -f https://$WERCKER_GH_TOKEN@github.com/joemercer.github.io.git master:gh-pages
