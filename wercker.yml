@@ -19,26 +19,7 @@ build:
         code: ./node_modules/.bin/wintersmith build -o ./build
 deploy:
   steps:
-    - script:
-        name: Deploy to Github Personal Page
-        code: |-
-
-            # remove current .git folder
-            rm -rf .git
-
-            # create CNAME
-            echo "joemercer.com" > CNAME
-
-            git init
-
-            git config user.email "pleasemailus@wercker.com"
-            git config user.name "werckerbot"
-
-            git add .
-            git commit -m "deploy commit from $WERCKER_STARTED_BY"
-
-            repo="$WERCKER_GIT_OWNER/$WERCKER_GIT_REPOSITORY"
-            remote="https://$WERCKER_GH_PAGES_TOKEN@github.com/$repo.git"
-            branch="master"
-
-            git push -f $remote master:$branch
+    - joemercer/gh-pages:
+        token: $GH_TOKEN
+        basedir: build
+        domain: joemercer.com
