@@ -9,8 +9,7 @@
     "about": "I study mathematics at the University of Waterloo in Canada. When I'm not studying I'm usually asleep, but somtimes in between the two I find some time to run or go to the gym. In high school "
   },
   "plugins": [
-    "./plugins/paginator.coffee",
-    "./plugins/filter.js"
+    "./plugins/paginator.coffee"
   ],
   "require": {
     "moment": "moment",
