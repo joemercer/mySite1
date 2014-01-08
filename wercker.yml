@@ -22,4 +22,3 @@ deploy:
     - joemercer/gh-pages:
         token: $GH_TOKEN
         basedir: build
-        domain: joemercer2.com
