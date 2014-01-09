@@ -15,12 +15,15 @@ html(lang='en')
       link(rel='stylesheet', href='/css/custom.css')
   body(class=bodyclass)
     header.header
-      div.content-wrap
-        block header
+      block header
+        div.logo-container
           div.logo
-            h1
-              a(href=locals.url)= locals.name
-            p.description= locals.description
+            a(href=locals.url)
+        nav.nav-container
+          ul.nav
+            li.nav-item Blog
+            li.nav-item Résumé
+            li.nav-item @jomrcr
     div#content
       div.content-wrap
         block content

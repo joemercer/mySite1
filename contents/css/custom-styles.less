@@ -1,3 +1,62 @@
+// # Header
+// ________
+
+@header-height: 70px;
+
+.header {
+  width: 100%;
+  height: @header-height;
+}
+
+// ## Logo
+
+@logo-height: @line-height-computed;
+@logo-color: @text-color;
+
+.logo-container {
+  height: @header-height;
+  width: @header-height;
+  float: left;
+}
+
+.logo {
+  height: @logo-height;
+  width: @logo-height;
+  margin: ((@header-height - @logo-height) / 2);
+  background-color: @logo-color;
+
+  a {
+    display: block;
+    height: @logo-height;
+    width: @logo-height;
+  }
+}
+
+// ## Nav
+
+@nav-height: 50px;
+@nav-item-horizontal-spacing: 20px;
+
+.nav-container {
+  height: @nav-height;
+  margin: ((@header-height - @nav-height) / 2) 0px;
+  float: right;
+}
+
+.nav {
+  margin: 0px;
+  padding: 0px @nav-item-horizontal-spacing;
+}
+
+.nav-item {
+  display: inline-block;
+  line-height: @nav-height;
+  padding: 0px @nav-item-horizontal-spacing;
+}
+
+
+
+
 .more, .date {
   font-family: 'Merriweather', serif;
   font-variant: small-caps;
