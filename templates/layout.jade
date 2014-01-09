@@ -25,15 +25,10 @@ html(lang='en')
             li.nav-item Résumé
             li.nav-item @jomrcr
     div#content
-      div.content-wrap
-        block content
+      block content
+        div.content-wrap
           h2 Welcome to zombocom!
-    footer
-      div.content-wrap
-        block footer
-          section.about
-            !=contents['about.md'].html
-          section.copy
-            p &copy; #{ new Date().getFullYear() } #{ locals.owner } &mdash; powered by&nbsp;
-              a(href='https://github.com/jnordberg/wintersmith') Wintersmith
-              //- please leave the "powered by" if you use the design
+    footer.footer
+      block footer
+        section.copy
+          p &copy; #{ new Date().getFullYear() } #{ locals.owner }. All rights reserved.

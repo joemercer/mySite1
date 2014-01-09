@@ -2542,3 +2542,10 @@ pre .javascript .function {
   text-rendering: auto;
   letter-spacing: 1px;
 }
+.footer {
+  margin: 30px 0px;
+}
+.copy {
+  text-align: center;
+  text-transform: uppercase;
+}
