@@ -16,8 +16,8 @@ block content
         !{ typogr(article.intro).typogrify() }
         if article.hasMore
           p.more
-            a(href=article.url) Read this article
-              span.glyphicon.glyphicon-chevron-right 
+            a(href=article.url) Read this article 
+              i.fa.fa-chevron-circle-right
   div.pagination
     if prevPage
       a(href=prevPage.url) « Newer
