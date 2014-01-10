@@ -1,5 +1,8 @@
 extends layout
 
+block append vars
+  - bodyclass = 'golden'
+
 block content
   include author
   each article in articles
@@ -9,12 +12,13 @@ block content
           span= moment(article.date).format('DD. MMMM YYYY')
         h2
           a(href=article.url)= article.title
-      section.content
+      section.content.golden-content
         !{ typogr(article.intro).typogrify() }
         if article.hasMore
           p.more
-            a(href=article.url) more
-  div.nav
+            a(href=article.url) Read this article
+              span.glyphicon.glyphicon-chevron-right 
+  div.pagination
     if prevPage
       a(href=prevPage.url) « Newer
     else

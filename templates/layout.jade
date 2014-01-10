@@ -1,6 +1,7 @@
 doctype html
 block vars
   - var bodyclass = null;
+  - var contentclass = null;
 html(lang='en')
   head
     block head
@@ -24,10 +25,10 @@ html(lang='en')
             li.nav-item Blog
             li.nav-item Résumé
             li.nav-item @jomrcr
-    div#content
+    div#content(class=contentclass)
       block content
-        div.content-wrap
-          h2 Welcome to zombocom!
+        div.container
+          h2 !!! this is some default text for when nothing overrides the content
     footer.footer
       block footer
         section.copy
