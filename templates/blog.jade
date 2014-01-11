@@ -1,0 +1,44 @@
+extends layout
+
+block append vars
+  - bodyclass = 'golden';
+
+block append head
+  link(rel='stylesheet', href='/css/custom.css')
+
+block header
+  header.blog-header.golden-content.center-block
+    img(src='http://placehold.it/228x228', alt='Joe Mercer').img-circle
+    h1 You're a Blog
+    div.blog-summary-container
+      p.blog-summary
+        | Musings by 
+        a(href='https://twitter.com/jomrcr') @jomrcr
+
+block content
+  div.golden-content.center-block
+    include author
+    each article in articles
+      article.article.intro
+        header
+          h2
+            a(href=article.url)= article.title
+          p.date
+            span= moment(article.date).format('DD. MMMM YYYY')
+        section.article-content
+          !{ typogr(article.intro).typogrify() }
+          if article.hasMore
+            p.more
+              a(href=article.url) 
+                | Read this article 
+                i.fa.fa-chevron-circle-right
+  div.pagination
+    if prevPage
+      a(href=prevPage.url) « Newer
+    else
+      a(href='/archive.html') « Archives
+    if nextPage
+      a(href=nextPage.url) Next page »
+
+
+

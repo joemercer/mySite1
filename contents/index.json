@@ -1,0 +1,50 @@
+{
+	"template": "index.jade",
+  "title": "Joe Mercer",
+
+  "splash": {
+    "name": "Joe Mercer",
+    "summary": "3 wolf moon ethical wayfarers jean shorts, hella narwhal photo booth meggings selvage. Deep v fap YOLO, Cosby sweater Etsy kale chips pickled drinking vinegar salvia try-hard chia. Squid flannel lo-fi Wes Anderson. Actually High Life sartorial, Blue Bottle gluten-free McSweeney's pork belly farm-to-table cred lomo Austin quinoa."
+  },
+
+  "nav": {
+    "about": {
+      "label": "About",
+      "href": "/#about"
+    },
+    "projects": {
+      "label": "Projects",
+      "href": "/#projects"
+    },
+    "blog": {
+      "label": "Blog",
+      "href": "/#blog"
+    }
+  },
+
+  "about": {
+    "picture": {
+      "src": "http://placehold.it/228x228",
+      "alt": "Joe Mercer"
+    },
+    "summary": "Salvia church-key brunch, Brooklyn wolf dreamcatcher flexitarian paleo craft beer blog Bushwick next level mustache. Master cleanse roof party post-ironic, yr disrupt VHS Shoreditch. Chia biodiesel VHS, master cleanse Portland craft beer +1. Ethical try-hard skateboard, PBR&B before they sold out trust fund XOXO banjo pour-over flexitarian. Chia beard leggings keffiyeh banh mi seitan lo-fi Etsy Echo Park chillwave hoodie Pitchfork DIY, deep v gentrify. Mumblecore roof party Carles, Neutra dreamcatcher food truck polaroid Cosby sweater fixie. Artisan leggings Austin McSweeney's plaid, master cleanse letterpress whatever messenger bag try-hard."
+  },
+
+  "projects": [{
+    "title": "Hipster",
+    "picture": {
+      "src": "http://placehold.it/228x228",
+      "alt": "Austin Chic"
+    },
+    "summary": "Tattooed tofu polaroid put a bird on it. Austin Tumblr ethical slow-carb ugh, retro cliche. Chia cornhole roof party, hashtag banjo kogi twee mlkshk Schlitz cray pork belly keffiyeh. Church-key deep v pickled, Terry Richardson polaroid lomo chambray Etsy typewriter irony Godard tofu food truck. Etsy put a bird on it you probably haven't heard of them tofu, gastropub kale chips selvage skateboard. Keffiyeh seitan ethical, plaid 3 wolf moon vegan semiotics umami. Blue Bottle Cosby sweater Austin flannel Bushwick, leggings seitan."
+  },
+  {
+    "title": "Hipster",
+    "picture": {
+      "src": "http://placehold.it/228x228",
+      "alt": "Austin Chic"
+    },
+    "summary": "Tattooed tofu polaroid put a bird on it. Austin Tumblr ethical slow-carb ugh, retro cliche. Chia cornhole roof party, hashtag banjo kogi twee mlkshk Schlitz cray pork belly keffiyeh. Church-key deep v pickled, Terry Richardson polaroid lomo chambray Etsy typewriter irony Godard tofu food truck. Etsy put a bird on it you probably haven't heard of them tofu, gastropub kale chips selvage skateboard. Keffiyeh seitan ethical, plaid 3 wolf moon vegan semiotics umami. Blue Bottle Cosby sweater Austin flannel Bushwick, leggings seitan."
+  }]
+
+}

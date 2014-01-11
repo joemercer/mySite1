@@ -1,7 +1,6 @@
 doctype html
 block vars
   - var bodyclass = null;
-  - var contentclass = null;
 html(lang='en')
   head
     block head
@@ -13,10 +12,8 @@ html(lang='en')
           = locals.name
       link(rel='alternate', href=locals.url+'/feed.xml', type='application/rss+xml', title=locals.description)
       link(href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic|Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic|Merriweather:400,300,300italic,400italic,700,700italic,900,900italic", rel="stylesheet" type="text/css")
-      link(rel='stylesheet', href='/css/custom.css')
       link(rel='stylesheet', href='//normalize-css.googlecode.com/svn/trunk/normalize.css')
       link(rel='stylesheet', href='//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css')
-      link(rel='stylesheet', href='/css/custom.css')
   body(class=bodyclass)
     block header
       header.main-header
@@ -28,10 +25,11 @@ html(lang='en')
             li.nav-item Blog
             li.nav-item Résumé
             li.nav-item @jomrcr
-    div#content(class=contentclass)
-      block content
+    block content
+      div#content
         div.container
           h2 !!! this is some default text for when nothing overrides the content
+          p !!! probably can get rid of the contentclass
     block footer
       footer.main-footer
         section.copy
