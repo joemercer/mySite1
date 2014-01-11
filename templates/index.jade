@@ -8,8 +8,14 @@ block header
 block content
 	- var index = contents['index.json'].metadata;
 	section#splash
-		h1!= index.splash.name
-		p!= index.splash.summary
+		div.container
+			h1!= index.splash.name
+			p!= index.splash.summary
+			nav.nav-container
+				ul.nav
+					li.nav-item!= index.nav.about.label
+					li.nav-item!= index.nav.projects.label
+					li.nav-item!= index.nav.blog.label
 	div.container
 		header#main-header
 			nav.nav-container
@@ -18,16 +24,16 @@ block content
 					li.nav-item!= index.nav.projects.label
 					li.nav-item!= index.nav.blog.label
 		section#about.row
-			div.col-md-4
+			div.col-sm-4
 				img(src=index.about.picture.src, alt=index.about.picture.alt).img-circle
-			div.col-md-8
+			div.col-sm-8
 				p!= index.about.summary
 		section#projects.row
 			each project in index.projects
-				div.col-md-8
+				div.col-sm-8
 					h2!= project.title
 					p!= project.summary
-				div.col-md-4
+				div.col-sm-4
 					img(src=project.picture.src, alt=project.picture.alt).img-rounded
 		section#blog
 			each article in contents.articles

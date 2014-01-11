@@ -1,1 +1,82 @@
 @import "custom-bootstrap.less";
+
+@import "../libs/golden/variables.less";
+@import "../libs/golden/mixins.less";
+
+@import "../libs/golden/bootstrap-variable-overrides.less";
+
+// # Nav
+
+@nav-height: 50px;
+@nav-item-horizontal-spacing: 20px;
+
+.nav-container {
+	width: 100%;
+  height: @nav-height;
+  margin: ((@header-height - @nav-height) / 2) 0px;
+  float: right;
+}
+
+.nav {
+  margin: 0px;
+  padding: 0px @nav-item-horizontal-spacing;
+}
+
+.nav-item {
+  display: inline-block;
+  line-height: @nav-height;
+  padding: 0px @nav-item-horizontal-spacing;
+}
+
+// # Splash
+// ________
+
+#splash {
+	text-align: center;
+}
+
+// # Header
+// ________
+
+@header-height: 70px;
+
+.main-header {
+  width: 100%;
+  height: @header-height;
+}
+
+// ## Nav
+
+@nav-height: 50px;
+@nav-item-horizontal-spacing: 20px;
+
+.nav-container {
+  height: @nav-height;
+  margin: ((@header-height - @nav-height) / 2) 0px;
+  float: right;
+}
+
+.nav {
+  margin: 0px;
+  padding: 0px @nav-item-horizontal-spacing;
+}
+
+.nav-item {
+  display: inline-block;
+  line-height: @nav-height;
+  padding: 0px @nav-item-horizontal-spacing;
+}
+
+
+
+// # Footer
+// ________
+
+.main-footer {
+  margin: (1.5 * @line-height-computed) 0px;
+}
+
+.copy {
+  text-align: center;
+  text-transform: uppercase;
+}
