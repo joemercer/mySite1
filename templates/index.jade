@@ -9,20 +9,15 @@ block content
 	- var index = contents['index.json'].metadata;
 	section#splash
 		div.container
-			h1!= index.splash.name
-			p!= index.splash.summary
-			nav.nav-container
-				ul.nav
-					li.nav-item!= index.nav.about.label
-					li.nav-item!= index.nav.projects.label
-					li.nav-item!= index.nav.blog.label
+			div.golden-content.center-block
+				h1!= index.splash.name
+				p!= index.splash.summary
+		nav.nav-container.fixed
+			ul.nav
+				li.nav-item!= index.nav.about.label
+				li.nav-item!= index.nav.projects.label
+				li.nav-item!= index.nav.blog.label
 	div.container
-		header#main-header
-			nav.nav-container
-				ul.nav
-					li.nav-item!= index.nav.about.label
-					li.nav-item!= index.nav.projects.label
-					li.nav-item!= index.nav.blog.label
 		section#about.row
 			div.col-sm-4
 				img(src=index.about.picture.src, alt=index.about.picture.alt).img-circle

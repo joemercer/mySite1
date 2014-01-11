@@ -82,7 +82,7 @@ html {
 }
 body {
   font-family: "Lora", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 14px;
+  font-size: 18px;
   line-height: 1.428571429;
   color: #333333;
   background-color: #ffffff;
@@ -136,8 +136,8 @@ img {
   border-radius: 50%;
 }
 hr {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 25px;
+  margin-bottom: 25px;
   border: 0;
   border-top: 1px solid #eeeeee;
 }
@@ -152,17 +152,17 @@ hr {
   border: 0;
 }
 p {
-  margin: 0 0 10px;
+  margin: 0 0 12.5px;
 }
 .lead {
-  margin-bottom: 20px;
-  font-size: 16px;
+  margin-bottom: 25px;
+  font-size: 20px;
   font-weight: 200;
   line-height: 1.4;
 }
 @media (min-width: 768px) {
   .lead {
-    font-size: 21px;
+    font-size: 27px;
   }
 }
 small,
@@ -262,8 +262,8 @@ h6 .small,
 h1,
 h2,
 h3 {
-  margin-top: 20px;
-  margin-bottom: 10px;
+  margin-top: 25px;
+  margin-bottom: 12.5px;
 }
 h1 small,
 h2 small,
@@ -276,8 +276,8 @@ h3 .small {
 h4,
 h5,
 h6 {
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 12.5px;
+  margin-bottom: 12.5px;
 }
 h4 small,
 h5 small,
@@ -289,37 +289,37 @@ h6 .small {
 }
 h1,
 .h1 {
-  font-size: 36px;
+  font-size: 46px;
 }
 h2,
 .h2 {
-  font-size: 30px;
+  font-size: 38px;
 }
 h3,
 .h3 {
-  font-size: 24px;
+  font-size: 31px;
 }
 h4,
 .h4 {
-  font-size: 18px;
+  font-size: 23px;
 }
 h5,
 .h5 {
-  font-size: 14px;
+  font-size: 18px;
 }
 h6,
 .h6 {
-  font-size: 12px;
+  font-size: 16px;
 }
 .page-header {
-  padding-bottom: 9px;
-  margin: 40px 0 20px;
+  padding-bottom: 11.5px;
+  margin: 50px 0 25px;
   border-bottom: 1px solid #eeeeee;
 }
 ul,
 ol {
   margin-top: 0;
-  margin-bottom: 10px;
+  margin-bottom: 12.5px;
 }
 ul ul,
 ol ul,
@@ -344,7 +344,7 @@ ol ol {
   padding-left: 0;
 }
 dl {
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 dt,
 dd {
@@ -400,12 +400,12 @@ abbr.initialism {
   text-transform: uppercase;
 }
 blockquote {
-  padding: 10px 20px;
-  margin: 0 0 20px;
+  padding: 12.5px 25px;
+  margin: 0 0 25px;
   border-left: 5px solid #eeeeee;
 }
 blockquote p {
-  font-size: 17.5px;
+  font-size: 22.5px;
   font-weight: 300;
   line-height: 1.25;
 }
@@ -444,7 +444,7 @@ blockquote:after {
   content: "";
 }
 address {
-  margin-bottom: 20px;
+  margin-bottom: 25px;
   font-style: normal;
   line-height: 1.428571429;
 }
@@ -1681,15 +1681,15 @@ pre .javascript .function {
   float: left;
 }
 .logo {
-  height: 20px;
-  width: 20px;
-  margin: 25px;
+  height: 25px;
+  width: 25px;
+  margin: 22.5px;
   background-color: #333333;
 }
 .logo a {
   display: block;
-  height: 20px;
-  width: 20px;
+  height: 25px;
+  width: 25px;
 }
 .nav-container {
   height: 50px;
@@ -1706,7 +1706,7 @@ pre .javascript .function {
   padding: 0px 20px;
 }
 .main-footer {
-  margin: 30px 0px;
+  margin: 37.5px 0px;
 }
 .copy {
   text-align: center;
@@ -2130,16 +2130,16 @@ pre .javascript .function {
   text-align: center;
 }
 .blog-header img {
-  margin-top: 22px;
-  margin-bottom: 11px;
+  margin-top: 29px;
+  margin-bottom: 14.5px;
 }
 .blog-summary-container {
-  margin: 44px auto;
+  margin: 58px auto;
 }
 .blog-summary-container .blog-summary {
   border-top: 1px solid #c3c3c3;
   border-bottom: 1px solid #c3c3c3;
-  padding: 11px 0px;
+  padding: 14.5px 0px;
 }
 .article.intro header {
   text-align: center;
@@ -2148,7 +2148,7 @@ pre .javascript .function {
   text-align: center;
 }
 .pagination a {
-  padding: 0px 11px;
+  padding: 0px 14.5px;
 }
 @media (max-width: 767px) {
   .golden .golden-content section.article-content {

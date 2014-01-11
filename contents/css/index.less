@@ -3,30 +3,10 @@
 @import "../libs/golden/variables.less";
 @import "../libs/golden/mixins.less";
 
+@import "../libs/golden/content.less";
+@import "../libs/golden/grid.less";
+
 @import "../libs/golden/bootstrap-variable-overrides.less";
-
-// # Nav
-
-@nav-height: 50px;
-@nav-item-horizontal-spacing: 20px;
-
-.nav-container {
-	width: 100%;
-  height: @nav-height;
-  margin: ((@header-height - @nav-height) / 2) 0px;
-  float: right;
-}
-
-.nav {
-  margin: 0px;
-  padding: 0px @nav-item-horizontal-spacing;
-}
-
-.nav-item {
-  display: inline-block;
-  line-height: @nav-height;
-  padding: 0px @nav-item-horizontal-spacing;
-}
 
 // # Splash
 // ________
@@ -35,29 +15,21 @@
 	text-align: center;
 }
 
-// # Header
-// ________
+// # Nav
 
-@header-height: 70px;
-
-.main-header {
-  width: 100%;
-  height: @header-height;
-}
-
-// ## Nav
-
-@nav-height: 50px;
-@nav-item-horizontal-spacing: 20px;
+@nav-height: (1.5 * @golden-line-height-computed);
+@nav-item-horizontal-spacing: @golden-line-height-computed;
+@nav-vertical-margin: @golden-line-height-computed;
 
 .nav-container {
+	width: 100%;
   height: @nav-height;
-  margin: ((@header-height - @nav-height) / 2) 0px;
-  float: right;
+  margin: @nav-vertical-margin 0px;
 }
 
 .nav {
-  margin: 0px;
+	display: inline-block;
+  margin: 0px auto;
   padding: 0px @nav-item-horizontal-spacing;
 }
 
@@ -67,6 +39,30 @@
   padding: 0px @nav-item-horizontal-spacing;
 }
 
+// # Nav-Main
+
+.nav-container {
+	.nav {
+		border-top: 1px solid @golden-gray-light;
+		border-bottom: 1px solid @golden-gray-light;
+	}
+}
+
+// # Nav-Fixed
+
+.nav-container.fixed {
+	position: fixed;
+	top: 0px;
+	z-index: 1000;
+	margin: 0px;
+	background-color: @golden-gray-dark;
+	color: @golden-gray-lightest;
+
+	.nav {
+		border: none;
+	}
+
+}
 
 
 // # Footer
