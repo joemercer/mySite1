@@ -1,11 +1,25 @@
-.article.intro {
+.blog-header {
+	text-align: center;
 
+	img {
+		margin-top: @golden-line-height-computed;
+		margin-bottom: @golden-line-height-computed / 2;
+	}
+}
+
+.blog-summary-container {
+	margin: (2 * @golden-line-height-computed) auto;
+
+	.blog-summary {
+		border-top: 1px solid @golden-gray-light;
+		border-bottom: 1px solid @golden-gray-light;
+		padding: (@golden-line-height-computed / 2) 0px;
+	}
+}
+
+.article.intro {
 	header {
 		text-align: center;
-	}
-
-	.content {
-		margin: 0px auto;
 	}
 }
 
@@ -17,7 +31,14 @@
 	}
 }
 
-.more, .date {
+@media (max-width: (@screen-sm-min - 1)) {
+  .golden .golden-content section.article-content {
+  	font-size: ceil(2 * 18px * @golden-large);
+  }
+}
+
+// change this probably
+.blog-summary, .more, .date {
   font-family: 'Merriweather', serif;
   font-variant: small-caps;
   text-transform: lowercase;

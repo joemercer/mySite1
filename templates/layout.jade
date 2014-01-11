@@ -16,8 +16,8 @@ html(lang='en')
       link(rel='stylesheet', href='/css/custom.css')
       link(href='//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css', rel='stylesheet')
   body(class=bodyclass)
-    header.header
-      block header
+    block header
+      header.main-header
         div.logo-container
           div.logo
             a(href=locals.url)
@@ -30,7 +30,7 @@ html(lang='en')
       block content
         div.container
           h2 !!! this is some default text for when nothing overrides the content
-    footer.footer
-      block footer
+    block footer
+      footer.main-footer
         section.copy
           p &copy; #{ new Date().getFullYear() } #{ locals.owner }. All rights reserved.
