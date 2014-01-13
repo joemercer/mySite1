@@ -15,25 +15,29 @@ block content
 				p!= index.splash.summary
 		nav.nav-container
 			ul.nav
-				li.nav-item!= index.nav.about.label
-				li.nav-item!= index.nav.projects.label
-				li.nav-item!= index.nav.blog.label
+				li.nav-item
+					a.tab-target(href=index.nav.about.href, data-tab-target=index.nav.about.tabId)!= index.nav.about.label
+				li.nav-item
+					a.tab-target(href=index.nav.projects.href, data-tab-target=index.nav.projects.tabId)!= index.nav.projects.label
+				li.nav-item
+					a.tab-target(href=index.nav.blog.href, data-tab-target=index.nav.blog.tabId)!= index.nav.blog.label
 	div#content.container
-		section#about.row
+		section#about.row.tab-section(data-tab=index.nav.about.tabId)
 			div.col-sm-4
 				img(src=index.about.picture.src, alt=index.about.picture.alt).img-circle
 			div.col-sm-8
 				p!= index.about.summary
-		section#projects.row
+		section#projects.row.tab-section.active(data-tab=index.nav.projects.tabId)
 			each project in index.projects
 				div.col-sm-8
 					h2!= project.title
 					p!= project.summary
 				div.col-sm-4
 					img(src=project.picture.src, alt=project.picture.alt).img-rounded
-		section#blog
-			each article in contents.articles
-				p!= article['index.md'].title
+		section#blog.row.tab-section(data-tab=index.nav.blog.tabId)
+			div.col-sm-12
+				each article in contents.articles
+					p!= article['index.md'].title
 
 block footer
 	footer#main-footer

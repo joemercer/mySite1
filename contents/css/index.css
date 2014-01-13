@@ -1705,6 +1705,12 @@ address {
 .nav-container.fixed .nav {
   border: none;
 }
+#content .tab-section {
+  display: none;
+}
+#content .tab-section.active {
+  display: block;
+}
 .main-footer {
   margin: 43.5px 0px;
 }

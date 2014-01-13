@@ -10,15 +10,18 @@
   "nav": {
     "about": {
       "label": "About",
-      "href": "/#about"
+      "href": "/#about",
+      "tabId": "about"
     },
     "projects": {
       "label": "Projects",
-      "href": "/#projects"
+      "href": "/#projects",
+      "tabId": "projects"
     },
     "blog": {
       "label": "Blog",
-      "href": "/#blog"
+      "href": "/#blog",
+      "tabId": "blog"
     }
   },
 

@@ -1,9 +1,11 @@
+var $tabSections;
 
 $(function(){
 	"use strict";
 	console.log('hello world');
 	var $window = $(window);
 
+	// # Fix Nav
 
 	var $content = $('#content');
 	var $nav = $('.nav-container');
@@ -21,6 +23,32 @@ $(function(){
 				$nav.removeClass('fixed');
 			}
     }
+	});
+
+	// # Tabs
+
+	var $tabTargets = $('.tab-target');
+	$tabSections = $('.tab-section');
+
+	$tabTargets.click(function(e){
+		e.preventDefault();
+
+		var $activeSection = $tabSections.filter('.active');
+		var target = $(e.target).data().tabTarget;
+
+		if ($activeSection.data().tab === target) {
+			return; // tab already active
+		}
+
+		var $section;
+		$tabSections.each(function(i, section){
+			$section = $(section);
+			if ($section.data().tab === target) {
+				$activeSection.removeClass('active');
+				$section.addClass('active');
+			}
+		});
+
 	});
 
 });
