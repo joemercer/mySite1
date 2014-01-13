@@ -25,11 +25,7 @@ module.exports = function(grunt) {
           beautify: true
         },
         files: {
-          'contents/js/custom.js': [
-            'contents/libs/bootstrap/js/carousel.js',
-            'contents/libs/bootstrap/js/dropdown.js',
-            'contents/libs/bootstrap/js/scrollspy.js',
-            'contents/libs/bootstrap/js/transition.js',
+          'contents/js/index.js': [
             'contents/js/styles.js'
           ]
         }
@@ -40,11 +36,7 @@ module.exports = function(grunt) {
           mangle: true
         },
         files: {
-          'contents/js/custom.min.js': [
-            'contents/libs/bootstrap/js/carousel.js',
-            'contents/libs/bootstrap/js/dropdown.js',
-            'contents/libs/bootstrap/js/scrollspy.js',
-            'contents/libs/bootstrap/js/transition.js',
+          'contents/js/index.min.js': [
             'contents/js/styles.js'
           ]
         }

@@ -1665,13 +1665,14 @@ address {
 .golden-row-narrow-center {
   margin-top: 30.901699437494738%;
 }
-#splash {
+#splash h1 {
   text-align: center;
 }
 .nav-container {
   width: 100%;
   height: 43.5px;
   margin: 29px 0px;
+  text-align: center;
 }
 .nav {
   display: inline-block;

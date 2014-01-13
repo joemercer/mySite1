@@ -12,12 +12,12 @@ block content
 			div.golden-content.center-block
 				h1!= index.splash.name
 				p!= index.splash.summary
-		nav.nav-container.fixed
+		nav.nav-container
 			ul.nav
 				li.nav-item!= index.nav.about.label
 				li.nav-item!= index.nav.projects.label
 				li.nav-item!= index.nav.blog.label
-	div.container
+	div#content.container
 		section#about.row
 			div.col-sm-4
 				img(src=index.about.picture.src, alt=index.about.picture.alt).img-circle
@@ -38,3 +38,6 @@ block footer
 	footer#main-footer
 		section.copy
 			p &copy; #{ new Date().getFullYear() } #{ locals.owner }. All rights reserved.
+
+block append scripts
+	script(src='/js/styles.js')
