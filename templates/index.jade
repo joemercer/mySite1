@@ -8,8 +8,9 @@ block header
 block content
 	- var index = contents['index.json'].metadata;
 	section#splash
-		div.container
+		div.intro.container
 			div.golden-content.center-block
+				img(src='http://placehold.it/228x228').img-rounded
 				h1!= index.splash.name
 				p!= index.splash.summary
 		nav.nav-container

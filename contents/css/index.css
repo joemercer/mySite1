@@ -1665,8 +1665,15 @@ address {
 .golden-row-narrow-center {
   margin-top: 30.901699437494738%;
 }
-#splash h1 {
+#splash .intro {
   text-align: center;
+}
+#splash .intro p {
+  text-align: left;
+}
+#splash .intro img {
+  margin-top: 29px;
+  margin-bottom: 14.5px;
 }
 .nav-container {
   width: 100%;
@@ -1676,7 +1683,6 @@ address {
 }
 .nav {
   display: inline-block;
-  margin: 0px auto;
   padding: 0px 29px;
 }
 .nav-item {
