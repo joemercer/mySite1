@@ -1705,6 +1705,10 @@ address {
 .nav-container.fixed .nav {
   border: none;
 }
+#content img {
+  padding-top: 14.5px;
+  padding-bottom: 29px;
+}
 #content .tab-section {
   display: none;
 }
@@ -1717,4 +1721,10 @@ address {
 .copy {
   text-align: center;
   text-transform: uppercase;
+}
+.img-full {
+  width: 68%;
+}
+.img-container-center {
+  text-align: center;
 }
