@@ -1,4 +1,4 @@
-/*! mySite 2014-01-13 */
+/*! mySite 2014-01-18 */
 var $tabSections;
 
 $(function() {
@@ -13,12 +13,12 @@ $(function() {
     var $tabTargets = $(".tab-target");
     $tabSections = $(".tab-section"), $tabTargets.click(function(e) {
         e.preventDefault();
-        var $activeSection = $tabSections.filter(".active"), target = $(e.target).data().tabTarget;
+        var $activeSection = $tabSections.filter(".active"), $activeTarget = $tabTargets.filter(".active"), $target = $(e.target), target = $target.data().tabTarget;
         if ($activeSection.data().tab !== target) {
             var $section;
             $tabSections.each(function(i, section) {
                 $section = $(section), $section.data().tab === target && ($activeSection.removeClass("active"), 
-                $section.addClass("active"));
+                $section.addClass("active"), $($activeTarget).removeClass("active"), $target.addClass("active"));
             });
         }
     });

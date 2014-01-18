@@ -267,12 +267,12 @@ textarea {
   line-height: inherit;
 }
 a {
-  color: #5a7696;
+  color: #008000;
   text-decoration: none;
 }
 a:hover,
 a:focus {
-  color: #3d5066;
+  color: #003400;
   text-decoration: underline;
 }
 a:focus {
@@ -347,10 +347,10 @@ cite {
   color: #c3c3c3;
 }
 .text-primary {
-  color: #5a7696;
+  color: #008000;
 }
 .text-primary:hover {
-  color: #475d76;
+  color: #004d00;
 }
 .text-warning {
   color: #c09853;
@@ -397,7 +397,7 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: "Ubuntu";
+  font-family: "Ubuntu", Georgia, "Times New Roman", Times, serif;
   font-weight: 700;
   line-height: 1.1618033988749894;
   color: inherit;
@@ -1698,7 +1698,7 @@ address {
   padding-top: 116px;
 }
 #splash .splash-content .intro .golden-content {
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.3);
   border-radius: 12px;
 }
 #splash .splash-content .intro p {
@@ -1720,14 +1720,26 @@ address {
   display: inline-block;
   padding: 0px 29px;
 }
-.nav-item {
+.nav-item,
+.nav-item a {
   display: inline-block;
   line-height: 43.5px;
   padding: 0px 29px;
+  font-family: "Ubuntu", Georgia, "Times New Roman", Times, serif;
+  color: #3c3c3c;
+  font-size: 23px;
+}
+.nav-item:hover,
+.nav-item a:hover,
+.nav-item.active,
+.nav-item a.active {
+  color: #008000;
+  font-weight: bold;
+  text-decoration: none;
 }
 .nav-container .nav {
-  border-top: 1px solid #c3c3c3;
-  border-bottom: 1px solid #c3c3c3;
+  border-top: 1px solid #616161;
+  border-bottom: 1px solid #616161;
 }
 .nav-container.fixed {
   position: fixed;

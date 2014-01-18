@@ -34,7 +34,9 @@ $(function(){
 		e.preventDefault();
 
 		var $activeSection = $tabSections.filter('.active');
-		var target = $(e.target).data().tabTarget;
+		var $activeTarget = $tabTargets.filter('.active');
+		var $target = $(e.target);
+		var target = $target.data().tabTarget;
 
 		if ($activeSection.data().tab === target) {
 			return; // tab already active
@@ -44,8 +46,12 @@ $(function(){
 		$tabSections.each(function(i, section){
 			$section = $(section);
 			if ($section.data().tab === target) {
+				// change indicator on tab
 				$activeSection.removeClass('active');
 				$section.addClass('active');
+				// change indicator on tab target
+				$($activeTarget).removeClass('active');
+				$target.addClass('active');
 			}
 		});
 

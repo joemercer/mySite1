@@ -49,7 +49,7 @@
 		padding-top: @golden-line-height-computed * 4;
 
 		.golden-content {
-			background-color: rgba(255, 255, 255, .5);
+			background-color: rgba(255, 255, 255, .3);
 			border-radius: 12px;
 		}
 
@@ -89,18 +89,30 @@
   padding: 0px @nav-item-horizontal-spacing;
 }
 
-.nav-item {
+.nav-item,
+.nav-item a {
   display: inline-block;
   line-height: @nav-height;
   padding: 0px @nav-item-horizontal-spacing;
+
+  font-family: @headings-font-family;
+  color: @golden-gray-dark;
+  font-size: @golden-font-size-large;
+
+  &:hover,
+  &.active {
+  	color: @brand-primary;
+  	font-weight: bold;
+  	text-decoration: none;
+  }
 }
 
 // # Nav-Main
 
 .nav-container {
 	.nav {
-		border-top: 1px solid @golden-gray-light;
-		border-bottom: 1px solid @golden-gray-light;
+		border-top: 1px solid @golden-gray;
+		border-bottom: 1px solid @golden-gray;
 	}
 }
 
