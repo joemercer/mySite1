@@ -11,17 +11,61 @@
 // # Splash
 // ________
 
-#splash .intro{
-	text-align: center;
+#splash {
+	height: @golden-line-height-computed * 24;
+	z-index: 5;
+	position: relative;
 
-	p {
-		text-align: left;
-	}
+	background-color: #FFF;
+}
 
-	img {
-		margin-top: @golden-line-height-computed;
-		margin-bottom: (@golden-line-height-computed / 2);
-	}
+#splash .splash-background {
+		width: 100%;
+    height: 100%;
+    z-index: 6;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background: url('../splash-background.jpg') no-repeat center center;
+	  -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  -o-background-size: cover;
+	  background-size: cover;
+
+    opacity : 0.5;
+}
+
+#splash .splash-content {
+	width: 100%;
+  height: 100%;
+	z-index: 10;
+	position: absolute;
+	top: 0;
+  left: 0;
+
+  .intro {
+		text-align: center;
+		padding-top: @golden-line-height-computed * 4;
+
+		.golden-content {
+			background-color: rgba(255, 255, 255, .5);
+			border-radius: 12px;
+		}
+
+		h1 {
+
+		}
+
+		p {
+			text-align: left;
+		}
+
+		img {
+			margin-top: @golden-line-height-computed;
+			margin-bottom: (@golden-line-height-computed / 2);
+		}
+  }
 }
 
 // # Nav
@@ -35,6 +79,9 @@
   height: @nav-height;
   margin: @nav-vertical-margin 0px;
   text-align: center;
+
+  position: absolute;
+  bottom: 0px;
 }
 
 .nav {

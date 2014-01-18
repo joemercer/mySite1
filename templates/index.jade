@@ -8,19 +8,21 @@ block header
 block content
 	- var index = contents['index.json'].metadata;
 	section#splash
-		div.intro.container
-			div.golden-content.center-block
-				img.img-rounded(src='http://placehold.it/228x228')
-				h1!= index.splash.name
-				p!= index.splash.summary
-		nav.nav-container
-			ul.nav
-				li.nav-item
-					a.tab-target(href=index.nav.about.href, data-tab-target=index.nav.about.tabId)!= index.nav.about.label
-				li.nav-item
-					a.tab-target(href=index.nav.projects.href, data-tab-target=index.nav.projects.tabId)!= index.nav.projects.label
-				li.nav-item
-					a.tab-target(href=index.nav.blog.href, data-tab-target=index.nav.blog.tabId)!= index.nav.blog.label
+		div.splash-background
+			|
+		div.splash-content
+			div.intro
+				div.golden-content.center-block
+					h1!= index.splash.name
+					p!= index.splash.summary
+			nav.nav-container
+				ul.nav
+					li.nav-item
+						a.tab-target(href=index.nav.about.href, data-tab-target=index.nav.about.tabId)!= index.nav.about.label
+					li.nav-item
+						a.tab-target(href=index.nav.projects.href, data-tab-target=index.nav.projects.tabId)!= index.nav.projects.label
+					li.nav-item
+						a.tab-target(href=index.nav.blog.href, data-tab-target=index.nav.blog.tabId)!= index.nav.blog.label
 	div#content.container
 		section#about.row.tab-section(data-tab=index.nav.about.tabId)
 			div.col-sm-4.img-container-center

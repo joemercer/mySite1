@@ -1665,13 +1665,46 @@ address {
 .golden-row-narrow-center {
   margin-top: 30.901699437494738%;
 }
-#splash .intro {
-  text-align: center;
+#splash {
+  height: 696px;
+  z-index: 5;
+  position: relative;
+  background-color: #FFF;
 }
-#splash .intro p {
+#splash .splash-background {
+  width: 100%;
+  height: 100%;
+  z-index: 6;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url('../splash-background.jpg') no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  opacity: 0.5;
+}
+#splash .splash-content {
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#splash .splash-content .intro {
+  text-align: center;
+  padding-top: 116px;
+}
+#splash .splash-content .intro .golden-content {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 12px;
+}
+#splash .splash-content .intro p {
   text-align: left;
 }
-#splash .intro img {
+#splash .splash-content .intro img {
   margin-top: 29px;
   margin-bottom: 14.5px;
 }
@@ -1680,6 +1713,8 @@ address {
   height: 43.5px;
   margin: 29px 0px;
   text-align: center;
+  position: absolute;
+  bottom: 0px;
 }
 .nav {
   display: inline-block;
