@@ -2126,6 +2126,17 @@ pre .javascript .function {
   text-align: center;
   text-transform: uppercase;
 }
+body.golden {
+  margin: 0px;
+}
+.golden-content {
+  padding: 0px 14.5px !important;
+}
+h1,
+h2,
+h3 {
+  word-wrap: break-word;
+}
 .blog-header {
   text-align: center;
 }
@@ -2153,6 +2164,18 @@ pre .javascript .function {
 @media (max-width: 767px) {
   .golden .golden-content section.article-content {
     font-size: 23px;
+  }
+  .golden .golden-content h1 {
+    font-size: 73px;
+  }
+  .golden .golden-content h1.blog-title {
+    font-size: 88px;
+  }
+  .golden .golden-content h2 {
+    font-size: 44px;
+  }
+  .golden .golden-content h3 {
+    font-size: 26.5px;
   }
 }
 .blog-summary,

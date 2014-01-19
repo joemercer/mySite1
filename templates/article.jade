@@ -1,25 +1,30 @@
-
 extends layout
 
 block append vars
-  - bodyclass = 'article-detail'
+  - bodyclass = 'golden';
 
 block prepend title
   | #{ page.title + " - "}
 
+block append head
+  link(rel='stylesheet', href='/css/blog.css')
+
 block header
   include author
-  h1= page.title
-  p.author
-    | #{ "Written by " }
-    mixin author(page.metadata.author)
+  header.blog-header.golden-content.center-block
+    h1= page.title
+    div.blog-summary-container
+      p.blog-summary
+        | !{moment(page.metadata.date).format('DD. MMMM YYYY')}
+        br
+        | #{ "Written by " }
+        mixin author(page.metadata.author)
+      p.date
 
 block content
-  article.article
-    section.content!= typogr(page.html).typogrify()
-
-block prepend footer
-  div.nav
+  div.golden-content.center-block
+    article.article
+      section.article-content 
+        !{ typogr(page.html).typogrify() }
+  div.pagination
     a(href=contents.index.url) « Full blog
-
-

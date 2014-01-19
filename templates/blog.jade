@@ -3,13 +3,16 @@ extends layout
 block append vars
   - bodyclass = 'golden';
 
+block title
+  | Joe Mercer - Blog
+
 block append head
   link(rel='stylesheet', href='/css/blog.css')
 
 block header
   header.blog-header.golden-content.center-block
     img(src='http://placehold.it/228x228', alt='Joe Mercer').img-circle
-    h1 You're a Blog
+    h1.blog-title You're a Blog
     div.blog-summary-container
       p.blog-summary
         | Musings by 

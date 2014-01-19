@@ -1,5 +1,5 @@
 ---
-title: iClickr - a Meteor Project
+title: Remaking iClicker with Meteor
 author: joemercer
 date: 2014-01-12 02:00
 template: article.jade

@@ -55,6 +55,22 @@
 
 @import "main.less";
 
+// general styles
+
+body.golden {
+	margin: 0px;
+}
+
+.golden-content {
+	padding: 0px (@golden-line-height-computed / 2) !important;
+}
+
+h1, h2, h3 {
+	word-wrap: break-word;
+}
+
+// header
+
 .blog-header {
 	text-align: center;
 
@@ -89,8 +105,24 @@
 }
 
 @media (max-width: (@screen-sm-min - 1)) {
-  .golden .golden-content section.article-content {
-  	font-size: ceil(2 * 18px * @golden-large);
+  .golden .golden-content {
+  	
+  	section.article-content {
+  		font-size: @golden-font-size-large;
+  	}
+
+  	h1 {
+	  	font-size: @golden-font-size-h2 + ((@golden-font-size-h1 - @golden-font-size-h2) / 2);
+	  }
+	  h1.blog-title {
+	  	font-size: @golden-font-size-h1;
+	  }
+	  h2 {
+	  	font-size: @golden-font-size-h3 + ((@golden-font-size-h2 - @golden-font-size-h3) / 2);
+	  }
+	  h3 {
+	  	font-size: @golden-font-size-h4 + ((@golden-font-size-h3 - @golden-font-size-h4) / 2);
+	  }
   }
 }
 
