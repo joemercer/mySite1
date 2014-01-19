@@ -24,9 +24,8 @@ block content
 						a.tab-target(href=index.nav.blog.href, data-tab-target=index.nav.blog.tabId)!= index.nav.blog.label
 	div#content.container
 		section#about.tab-section(data-tab=index.nav.about.tabId)
-			div.col-sm-4.img-container-center
-				img.img-circle(src=index.about.picture.src, alt=index.about.picture.alt)
-			div.col-sm-8
+			img.img-circle.img-responsive.center-block(src=index.about.picture.src, alt=index.about.picture.alt)
+			div.golden-content.columns-2
 				p!= index.about.summary
 		section#projects.tab-section.active(data-tab=index.nav.projects.tabId)
 			each project in index.projects
