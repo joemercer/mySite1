@@ -21,11 +21,11 @@ block content
     - var summary = page.metadata.summary
     div#summary
       each bullet in summary.entries
-        div.row
+        div.row.summary-dl
           div.col-sm-5.sidebar
-            h5!= bullet.word
+            h5.summary-dt!= bullet.word
           div.col-sm-19
-            p!= bullet.value
+            p.summary-dd!= bullet.value
     hr
     - var education = page.metadata.education
     div#education.row

@@ -2680,6 +2680,19 @@ td.visible-print {
     text-align: right;
   }
 }
+.summary-dl {
+  padding-bottom: 6.25px;
+}
+.summary-dt {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  line-height: 1.464;
+}
+.summary-dd {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  line-height: 1.464;
+}
 hr {
   margin-top: 12.5px;
   margin-bottom: 12.5px;
