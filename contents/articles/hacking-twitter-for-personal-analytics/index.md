@@ -1,5 +1,5 @@
 ---
-title: Stachetag - Getting Started
+title: Hacking the Twitter API
 author: joemercer
 date: 2014-01-18 19:00
 template: article.jade
