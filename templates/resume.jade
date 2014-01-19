@@ -11,18 +11,20 @@ block header
 block content
   div.container
     - var contact = page.metadata.contact
-    div.page-header
-      h1 !{contact.fixed.name}
-      div#contact
-        p.lead.text-muted 
-          a(href="#{contact.fixed.twitterURL}", target="_blank") #{contact.fixed.twitterText} 
-          | | #{contact.fixed.phoneText}
-      - var summary = page.metadata.summary
-      div#summary
-        dl.dl-horizontal
-          each bullet in summary.entries
-            dt!= bullet.word
-            dd!= bullet.text
+    div#contact
+      h1 !{contact.info.name}
+      div.contact-options
+        div.contact-option #{contact.info.email.label}
+        div.contact-option
+          a(href="#{contact.info.twitter.href}", target="_blank") #{contact.info.twitter.label}
+        div.contact-option #{contact.info.phone.label}
+    - var summary = page.metadata.summary
+    div#summary
+      dl.dl-horizontal
+        each bullet in summary.entries
+          dt!= bullet.word
+          dd.indent!= bullet.explanation
+    hr
     dl.dl-horizontal
       - var education = page.metadata.education
       dt

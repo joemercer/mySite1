@@ -7,77 +7,39 @@
   },
 
   "contact": {
-    "text": "Contact",
-    "fixed": {
+    "label": "Contact",
+    "info": {
       "name": "Joe Mercer",
       "tagline": "for you, for the world",
       "description": "I study Math at the University of Waterloo, I write code for companies (Bazaarvoice, Tagged) and sometimes for myself also. Currently I live in San Francisco, but my whereabouts seem prone to changing frequently",
 
-      "phoneText": "908.989.0807",
+      "email": {
+        "label": "jomrcr@gmail.com",
+        "href": "mailto:jomrcr@gmail.com"
+      },
+      "twitter": {
+        "label": "@jomrcr",
+        "handle": "@jomrcr",
+        "href": "https://twitter.com/jomrcr"
+      },
+      "phone": {
+        "label": "908.989.0807"
+      },
 
-      "emailText": "jomrcr@gmail.com",
-      "emailURL": "mailto:jomrcr@gmail.com",
-
-      "twitterText": "@jomrcr",
-      "twitterHandle": "@jomrcr",
-      "twitterURL": "https://twitter.com/jomrcr",
-
-      "gitHubText": "GitHub",
-      "gitHubURL": "https://github.com/joemercer",
+      "github": {
+        "label": "GitHub",
+        "href": "https://github.com/joemercer"
+      },
 
       "uWaterloo": {
         "id": "20408328",
         "program": "3A Honours Mathematics"
       }
-    },
-
-    "minEntries": 1,
-    "maxEntries": 5,
-    "entries": [
-      {
-        "value": "name",
-        "text": "Joe Mercer",
-        "dateAdded": "2013-09-03",
-        "lastDateUpdated": "2013-09-03",
-        "tags": ["default"],
-        "importance": 200
-      },
-      {
-        "value": "email",
-        "text": "jmercer@uwaterloo.ca",
-        "lastDateUpdated": "2013-09-03",
-        "dateAdded": "2013-09-03",
-        "tags": ["default"],
-        "importance": 100
-      },
-      {
-        "value": "phone",
-        "text": "908.989.0807",
-        "lastDateUpdated": "2013-09-03",
-        "dateAdded": "2013-09-03",
-        "tags": ["default"],
-        "importance": 100
-      },
-      {
-        "value": "uWaterloo Student ID",
-        "text": "20408328",
-        "lastDateUpdated": "2013-09-03",
-        "dateAdded": "2013-09-03",
-        "tags": ["uwaterloo"],
-        "importance": 100
-      },
-      {
-        "value": "Program",
-        "text": "2B Honours Mathematics",
-        "lastDateUpdated": "2013-09-03",
-        "dateAdded": "2013-09-03",
-        "tags": ["uwaterloo"],
-        "importance": 100
-      }
-    ]
+    }
   },
+
   "summary": {
-    "text": "Summary",
+    "label": "Summary",
     "dateAdded": "2013-09-03",
     "lastDateUpdated": "2013-09-03",
     "minEntries": 1,
@@ -85,7 +47,7 @@
     "entries": [
       {
         "word": "Experienced",
-        "text": "Experienced <u>Backbone.js</u> client-side programmer and ASP.NET server programmer",
+        "explanation": "Experienced <u>Backbone.js</u> client-side programmer and ASP.NET server programmer",
         "dateAdded": "2013-09-03",
         "lastDateUpdated": "2013-09-03",
         "tags": ["default", "javascript", "front-end"],
@@ -93,7 +55,7 @@
       },
       {
         "word": "Awesome",
-        "text": "Self-motivated, self-starter comfortable working independently or as part of a team; accustomed to taking initiative and managing multiple projects simultaneously",
+        "explanation": "Self-motivated, self-starter comfortable working independently or as part of a team; accustomed to taking initiative and managing multiple projects simultaneously",
         "lastDateUpdated": "2013-09-03",
         "dateAdded": "2013-09-03",
         "tags": ["default", "personality"],
@@ -101,7 +63,7 @@
       },
       {
         "word": "Fearless",
-        "text": "Fearless problem solver willing to tackle intimidating problems by exploring new and creative solutions; highly adaptable in quick-changing technical environments",
+        "explanation": "Fearless problem solver willing to tackle intimidating problems by exploring new and creative solutions; highly adaptable in quick-changing technical environments",
         "lastDateUpdated": "2013-09-03",
         "dateAdded": "2013-09-03",
         "tags": ["default", "personality"],
