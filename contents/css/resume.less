@@ -23,7 +23,7 @@
 
 // Utility classes
 @import "../libs/bootstrap/less/utilities.less";
-// @import "../libs/bootstrap/less/responsive-utilities.less";
+@import "../libs/bootstrap/less/responsive-utilities.less";
 
 // Golden
 // ______
@@ -36,20 +36,50 @@
 
 @import "../libs/golden/bootstrap-variable-overrides.less";
 
-
-
-.contact-option {
-	display: block;
-	padding-left: @golden-line-height-computed / 2;
-	padding-right: @golden-line-height-computed / 2;
-}
-
-@media (min-width: @screen-sm-min) {
-	.contact-option {
-		display: inline-block;
+#contact {
+	h1 {
+		margin-top: @golden-line-height-computed;
+		margin-bottom: @golden-line-height-computed / 2;
 	}
 }
 
+.contact-options {
+	margin-bottom: @golden-line-height-computed / 2;
+}
+
+.contact-option {
+	display: block;
+	padding-left: 0px;
+	padding-right: 0px;
+
+	color: @golden-gray-light;
+}
+
+@media (min-width: (@screen-sm-min / 2)) {
+	.contact-option {
+		display: inline-block;
+		padding-left: @golden-line-height-computed / 4;
+		padding-right: @golden-line-height-computed / 4;
+	}
+}
+
+
+.sidebar {
+	color: @golden-gray-dark;
+}
+
+@media (min-width: @screen-sm-min) {
+	.sidebar {
+		text-align: right;
+	}
+}
+
+
+
+hr {
+	margin-top: @golden-line-height-computed / 2;
+	margin-bottom: @golden-line-height-computed / 2;
+}
 
 
 

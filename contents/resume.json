@@ -47,7 +47,7 @@
     "entries": [
       {
         "word": "Experienced",
-        "explanation": "Experienced <u>Backbone.js</u> client-side programmer and ASP.NET server programmer",
+        "value": "Experienced client-side programmer and ASP.NET server programmer",
         "dateAdded": "2013-09-03",
         "lastDateUpdated": "2013-09-03",
         "tags": ["default", "javascript", "front-end"],
@@ -55,7 +55,7 @@
       },
       {
         "word": "Awesome",
-        "explanation": "Self-motivated, self-starter comfortable working independently or as part of a team; accustomed to taking initiative and managing multiple projects simultaneously",
+        "value": "Self-motivated, self-starter comfortable working independently or as part of a team; accustomed to taking initiative and managing multiple projects simultaneously",
         "lastDateUpdated": "2013-09-03",
         "dateAdded": "2013-09-03",
         "tags": ["default", "personality"],
@@ -63,7 +63,7 @@
       },
       {
         "word": "Fearless",
-        "explanation": "Fearless problem solver willing to tackle intimidating problems by exploring new and creative solutions; highly adaptable in quick-changing technical environments",
+        "value": "Fearless problem solver willing to tackle intimidating problems by exploring new and creative solutions; highly adaptable in quick-changing technical environments",
         "lastDateUpdated": "2013-09-03",
         "dateAdded": "2013-09-03",
         "tags": ["default", "personality"],
@@ -72,20 +72,21 @@
     ]
   },
   "education": {
-    "text": "Education",
+    "label": "Education",
     "dateAdded": "2013-09-03",
     "lastDateUpdated": "2013-09-03",
     "minEntries": 1,
     "maxEntries": 2,
     "entries": [
       {
-        "text": "University of Waterloo",
         "dateAdded": "2013-09-03",
         "lastDateUpdated": "2013-09-03",
         "tags": ["default", "academic"],
         "importance": 200,
-        "school": "University of Waterloo",
-        "schoolURL": "https://uwaterloo.ca/",
+        "school": {
+          "label": "University of Waterloo",
+          "href": "https://uwaterloo.ca/"
+        },
         "location": "Waterloo, ON",
         "degree": "Candidate for Bachelor of Mathematics",
         "program": "Computer Science",
@@ -96,14 +97,13 @@
     ]
   },
   "experience": {
-    "text": "Experience",
+    "label": "Experience",
     "dateAdded": "2013-09-03",
     "lastDateUpdated": "2013-09-03",
     "minEntries": 1,
     "maxEntries": 4,
     "entries": [
       {
-        "text": "Tagged",
         "dateAdded": "2013-09-03",
         "lastDateUpdated": "2013-09-03",
         "tags": ["default", "javascript", "front-end"],
@@ -111,8 +111,10 @@
         "minEntries": 2,
         "maxEntries": 5,
         "position": "Software Engineer",
-        "company": "Tagged",
-        "companyURL": "http://about.tagged.com/",
+        "company": {
+          "label": "Tagged",
+          "href": "http://about.tagged.com/"
+        },
         "location": "San Francisco, CA",
         "startDate": "September, 2013",
         "endDate": "December, 2013",
@@ -120,7 +122,7 @@
         "entries": [
           {
             "word": "JavaScript",
-            "text": "Rewrote UI functionality to meet W3C web accessibility requirements",
+            "value": "Rewrote UI functionality to meet W3C web accessibility requirements",
             "dateAdded": "2013-09-03",
             "lastDateUpdated": "2013-09-03",
             "tags": ["default", "javascript", "front-end"],
@@ -128,7 +130,7 @@
           },
           {
             "word": "CSS",
-            "text": "Developed features: tag filter, review attribution statement, and others",
+            "value": "Developed features: tag filter, review attribution statement, and others",
             "lastDateUpdated": "2013-09-03",
             "dateAdded": "2013-09-03",
             "tags": ["default"],
@@ -136,7 +138,7 @@
           },
           {
             "word": "Motorcycle",
-            "text": "Utilized a variety of server and client-side JavaScript technologies including Node.js, Backbone, and Handlebars",
+            "value": "Utilized a variety of server and client-side JavaScript technologies including Node.js, Backbone, and Handlebars",
             "lastDateUpdated": "2013-09-03",
             "dateAdded": "2013-09-03",
             "tags": ["default"],
@@ -145,7 +147,6 @@
         ]
       },
       {
-        "text": "Bazaarvoice",
         "dateAdded": "2013-09-03",
         "lastDateUpdated": "2013-09-03",
         "tags": ["default", "javascript", "front-end"],
@@ -153,35 +154,37 @@
         "minEntries": 2,
         "maxEntries": 5,
         "position": "Software Engineer",
-        "company": "Bazaarvoice",
-        "companyURL": "http://www.bazaarvoice.com/about/",
+        "company": {
+          "label": "Bazaarvoice",
+          "href": "http://www.bazaarvoice.com/about/"
+        },
         "location": "Austin, TX",
         "startDate": "January, 2013",
         "endDate": "May, 2013",
         "entries": [
           {
-            "text": "Rewrote UI functionality to meet W3C web accessibility requirements",
+            "value": "Rewrote UI functionality to meet W3C web accessibility requirements",
             "dateAdded": "2013-09-03",
             "lastDateUpdated": "2013-09-03",
             "tags": ["default", "javascript", "front-end"],
             "importance": 200
           },
           {
-            "text": "Developed features: tag filter, review attribution statement, and others",
+            "value": "Developed features: tag filter, review attribution statement, and others",
             "lastDateUpdated": "2013-09-03",
             "dateAdded": "2013-09-03",
             "tags": ["default"],
             "importance": 100
           },
           {
-            "text": "Utilized a variety of server and client-side JavaScript technologies including Node.js, Backbone, and Handlebars",
+            "value": "Utilized a variety of server and client-side JavaScript technologies including Node.js, Backbone, and Handlebars",
             "lastDateUpdated": "2013-09-03",
             "dateAdded": "2013-09-03",
             "tags": ["default"],
             "importance": 100
           },
           {
-            "text": "Followed the test-driven development model by using the Mocha and Expresso JavaScript testing frameworks",
+            "value": "Followed the test-driven development model by using the Mocha and Expresso JavaScript testing frameworks",
             "lastDateUpdated": "2013-09-03",
             "dateAdded": "2013-09-03",
             "tags": ["default"],
@@ -190,7 +193,6 @@
         ]
       },
       {
-        "text": "University of Waterloo",
         "dateAdded": "2013-09-03",
         "lastDateUpdated": "2013-09-03",
         "tags": ["default", "javascript", "front-end"],
@@ -198,21 +200,23 @@
         "minEntries": 2,
         "maxEntries": 5,
         "position": "Undergraduate Research Assistant",
-        "company": "University of Waterloo",
-        "companyURL": "https://uwaterloo.ca/",
+        "company": {
+          "label": "University of Waterloo",
+          "href": "https://uwaterloo.ca/"
+        },
         "location": "Waterloo, ON",
         "startDate": "September, 2012",
         "endDate": "January, 2013",
         "entries": [
           {
-            "text": "Conducted research in the implementation and evaluation of recommendation systems",
+            "value": "Conducted research in the implementation and evaluation of recommendation systems",
             "dateAdded": "2013-09-03",
             "lastDateUpdated": "2013-09-03",
             "tags": ["default"],
             "importance": 200
           },
           {
-            "text": "Collected and performed QFD (viability) analysis on market research for a music recommendation service",
+            "value": "Collected and performed QFD (viability) analysis on market research for a music recommendation service",
             "lastDateUpdated": "2013-09-03",
             "dateAdded": "2013-09-03",
             "tags": ["default"],
@@ -221,7 +225,6 @@
         ]
       },
       {
-        "text": "NextBestSong",
         "dateAdded": "2013-09-03",
         "lastDateUpdated": "2013-09-03",
         "tags": ["C#", "back-end"],
@@ -229,34 +232,36 @@
         "minEntries": 2,
         "maxEntries": 5,
         "position": "ASP.NET Server Programmer",
-        "company": "NextBestSong",
+        "company": {
+          "label": "NextBestSong"
+        },
         "location": "Redmond, WA",
         "startDate": "March, 2012",
         "endDate": "September, 2012",
         "entries": [
           {
-            "text": "Designed and built an ASP.NET web application that uses song metadata to help users create custom playlists",
+            "value": "Designed and built an ASP.NET web application that uses song metadata to help users create custom playlists",
             "dateAdded": "2013-09-03",
             "lastDateUpdated": "2013-09-03",
             "tags": ["default"],
             "importance": 200
           },
           {
-            "text": "Developed a web service API to support browser-based AJAX calls",
+            "value": "Developed a web service API to support browser-based AJAX calls",
             "lastDateUpdated": "2013-09-03",
             "dateAdded": "2013-09-03",
             "tags": ["default"],
             "importance": 100
           },
           {
-            "text": "Established and maintained a SQL Server database using LINQ to SQL",
+            "value": "Established and maintained a SQL Server database using LINQ to SQL",
             "lastDateUpdated": "2013-09-03",
             "dateAdded": "2013-09-03",
             "tags": ["default"],
             "importance": 100
           },
           {
-            "text": "Hosted a SQL Server database in the cloud using Amazon web services",
+            "value": "Hosted a SQL Server database in the cloud using Amazon web services",
             "lastDateUpdated": "2013-09-03",
             "dateAdded": "2013-09-03",
             "tags": ["default"],
@@ -273,34 +278,36 @@
         "minEntries": 2,
         "maxEntries": 5,
         "position": "SCRUM Master",
-        "company": "NextBestSong",
+        "company": {
+          "label": "NextBestSong"
+        },
         "location": "Redmond, WA",
         "startDate": "March, 2012",
         "endDate": "September, 2012",
         "entries": [
           {
-            "text": "Managed a three person team using the SCRUM methodology",
+            "value": "Managed a three person team using the SCRUM methodology",
             "dateAdded": "2013-09-03",
             "lastDateUpdated": "2013-09-03",
             "tags": ["default"],
             "importance": 200
           },
           {
-            "text": "Defined product vision and product evolution by creating specific use-case scenarios",
+            "value": "Defined product vision and product evolution by creating specific use-case scenarios",
             "lastDateUpdated": "2013-09-03",
             "dateAdded": "2013-09-03",
             "tags": ["default"],
             "importance": 100
           },
           {
-            "text": "Organized team strategy by setting short term goals and delegating tasks",
+            "value": "Organized team strategy by setting short term goals and delegating tasks",
             "lastDateUpdated": "2013-09-03",
             "dateAdded": "2013-09-03",
             "tags": ["default"],
             "importance": 100
           },
           {
-            "text": "Lead daily stand-up meetings to ensure work progressed on schedule",
+            "value": "Lead daily stand-up meetings to ensure work progressed on schedule",
             "lastDateUpdated": "2013-09-03",
             "dateAdded": "2013-09-03",
             "tags": ["default"],
@@ -311,14 +318,14 @@
     ]
   },
   "projects": {
-    "text": "Projects",
+    "label": "Projects",
     "dateAdded": "2013-09-03",
     "lastDateUpdated": "2013-09-03",
     "minEntries": 1,
     "maxEntries": 4,
     "entries": [
       {
-        "text": "Sweet Like The Jam",
+        "label": "Sweet Like The Jam",
         "dateAdded": "2013-09-03",
         "lastDateUpdated": "2013-09-03",
         "tags": ["default", "javascript", "front-end"],
@@ -330,14 +337,14 @@
         "endDate": "current",
         "entries": [
           {
-            "text": "Developed a static AngularJS application that plays songs recommended by LastFM in an in-page Youtube player",
+            "value": "Developed a static AngularJS application that plays songs recommended by LastFM in an in-page Youtube player",
             "dateAdded": "2013-09-03",
             "lastDateUpdated": "2013-09-03",
             "tags": ["default", "javascript", "front-end"],
             "importance": 200
           },
           {
-            "text": "Hosted the application using Amazon S3",
+            "value": "Hosted the application using Amazon S3",
             "lastDateUpdated": "2013-09-03",
             "dateAdded": "2013-09-03",
             "tags": ["default"],
@@ -346,7 +353,7 @@
         ]
       },
       {
-        "text": "Tag Trees",
+        "label": "Tag Trees",
         "dateAdded": "2013-09-03",
         "lastDateUpdated": "2013-09-03",
         "tags": ["default", "javascript", "front-end"],
@@ -357,14 +364,14 @@
         "startDate": "September, 2012",
         "entries": [
           {
-            "text": "Developed a C# program that defined hierarchical relationships between song tags by arranging them in a custom \"tree\" structure",
+            "value": "Developed a C# program that defined hierarchical relationships between song tags by arranging them in a custom \"tree\" structure",
             "dateAdded": "2013-09-03",
             "lastDateUpdated": "2013-09-03",
             "tags": ["default", "javascript", "front-end"],
             "importance": 200
           },
           {
-            "text": "Hosted the application using Amazon S3",
+            "value": "Hosted the application using Amazon S3",
             "lastDateUpdated": "2013-09-03",
             "dateAdded": "2013-09-03",
             "tags": ["default"],
@@ -373,7 +380,7 @@
         ]
       },
       {
-        "text": "Supply Chain Analysis",
+        "label": "Supply Chain Analysis",
         "dateAdded": "2013-09-03",
         "lastDateUpdated": "2013-09-03",
         "tags": ["default"],
@@ -385,7 +392,7 @@
         "startDate": "December, 2011",
         "entries": [
           {
-            "text": "Developed a forecasting system to predict demand for stages in a supply chain",
+            "value": "Developed a forecasting system to predict demand for stages in a supply chain",
             "dateAdded": "2013-09-03",
             "lastDateUpdated": "2013-09-03",
             "tags": ["default", "javascript", "front-end"],
