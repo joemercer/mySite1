@@ -1,0 +1,66 @@
+extends layout
+
+block title
+  | #{page.title}
+
+block append head
+  link(rel='stylesheet', href='/css/resume.css')
+
+block header
+
+block content
+  div.container
+    - var contact = page.metadata.contact
+    div.page-header
+      h1 !{contact.fixed.name}
+      div#contact
+        p.lead.text-muted 
+          a(href="#{contact.fixed.twitterURL}", target="_blank") #{contact.fixed.twitterText} 
+          | | #{contact.fixed.phoneText}
+      - var summary = page.metadata.summary
+      div#summary
+        dl.dl-horizontal
+          each bullet in summary.entries
+            dt!= bullet.word
+            dd!= bullet.text
+    dl.dl-horizontal
+      - var education = page.metadata.education
+      dt
+        h3.text-muted!= education.text
+      dd
+        each entry in education.entries
+          h4 !{entry.degree}, 
+            a(href="!{entry.schoolURL}", target="_blank") #{entry.school}
+          p.text-muted #{entry.startDate} - #{entry.endDate} | #{entry.location}
+          - var bullets = entry.entries
+            ul
+              each bullet in bullets
+                li !{bullet.text}
+      hr
+      - var experience = page.metadata.experience
+      dt
+        h3.text-muted!= experience.text
+      dd
+        each entry in experience.entries
+          h4 !{entry.position}, 
+            a(href="#{entry.companyURL}", target="_blank") #{entry.company}
+          p.text-muted #{entry.startDate} - #{entry.endDate} | #{entry.location}
+          - var bullets = entry.entries
+            ul
+              each bullet in bullets
+                li !{bullet.text}
+      hr
+      - var projects = page.metadata.projects
+      dt
+        h3.text-muted!= projects.text
+      dd
+        each entry in projects.entries
+          h4 !{entry.text}
+            a(href="#{entry.schoolURL}", target="_blank") #{entry.company}
+          p.text-muted #{entry.startDate} - #{entry.endDate} | #{entry.location}
+          - var bullets = entry.entries
+            ul
+              each bullet in bullets
+                li !{bullet.text}
+
+block footer

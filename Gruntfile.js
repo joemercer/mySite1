@@ -48,7 +48,8 @@ module.exports = function(grunt) {
         },
         files: {
           'contents/css/custom.css': 'contents/css/custom.less',
-          'contents/css/index.css': 'contents/css/index.less'
+          'contents/css/index.css': 'contents/css/index.less',
+          'contents/css/resume.css': 'contents/css/resume.less'
         }
       },
       production: {
@@ -58,7 +59,8 @@ module.exports = function(grunt) {
         },
         files: {
           'contents/css/custom.min.css': 'contents/css/custom.less',
-          'contents/css/index.min.css': 'contents/css/index.less'
+          'contents/css/index.min.css': 'contents/css/index.less',
+          'contents/css/resume.min.css': 'contents/css/resume.less'
         }
       }
     },
