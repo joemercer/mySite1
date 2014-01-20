@@ -17,11 +17,11 @@ block content
 			nav.nav-container
 				ul.nav
 					li.nav-item
-						a.tab-target(href=index.nav.about.href, data-tab-target=index.nav.about.tabId)!= index.nav.about.label
+						a(href=index.nav.blog.href, data-tab-target=index.nav.blog.tabId)!= index.nav.blog.label
 					li.nav-item
 						a.tab-target.active(href=index.nav.projects.href, data-tab-target=index.nav.projects.tabId)!= index.nav.projects.label
 					li.nav-item
-						a.tab-target(href=index.nav.blog.href, data-tab-target=index.nav.blog.tabId)!= index.nav.blog.label
+						a(href=index.nav.about.href, data-tab-target=index.nav.about.tabId)!= index.nav.about.label
 	div#content.container
 		section#about.tab-section(data-tab=index.nav.about.tabId)
 			img.img-circle.img-responsive.center-block(src=index.about.picture.src, alt=index.about.picture.alt)

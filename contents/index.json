@@ -9,8 +9,8 @@
 
   "nav": {
     "about": {
-      "label": "About",
-      "href": "/#about",
+      "label": "Résumé",
+      "href": "/resume.html",
       "tabId": "about"
     },
     "projects": {
@@ -20,7 +20,7 @@
     },
     "blog": {
       "label": "Blog",
-      "href": "/#blog",
+      "href": "/blog.html",
       "tabId": "blog"
     }
   },
