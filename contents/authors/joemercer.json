@@ -1,5 +1,10 @@
 {
   "name": "Joe Mercer",
   "email": "jomrcr@gmail.com",
-  "bio": "Bio stuffs"
+  "bio": "Bio stuffs",
+  "twitter": {
+  	"label": "@jomrcr",
+  	"handle": "@jomrcr",
+  	"href": "https://twitter.com/jomrcr"
+  }
 }

@@ -1749,6 +1749,12 @@ address {
   background-color: #3c3c3c;
   color: #f5f5f5;
 }
+.nav-container.fixed .nav-item a {
+  color: #f5f5f5;
+}
+.nav-container.fixed .nav-item a.active {
+  color: #008000;
+}
 .nav-container.fixed .nav {
   border: none;
 }
