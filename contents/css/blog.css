@@ -2143,6 +2143,8 @@ h3 {
 .blog-header img {
   margin-top: 29px;
   margin-bottom: 14.5px;
+  height: 228px;
+  width: 228px;
 }
 .blog-summary-container {
   margin: 58px auto;
