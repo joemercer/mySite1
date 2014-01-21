@@ -12,12 +12,15 @@ block content
   div.container
     - var contact = page.metadata.contact
     div#contact
-      h1 !{contact.info.name}
+      h1.name !{contact.info.name}
+      a.twitter(href=contact.info.twitter.href, target="_blank") #{contact.info.twitter.label}
       div.contact-options
-        div.contact-option #{contact.info.email.label}
         div.contact-option
-          a(href=contact.info.twitter.href, target="_blank") #{contact.info.twitter.label}
-        div.contact-option #{contact.info.phone.label}
+          a(href=contact.info.email.href) #{contact.info.email.label}
+        div.contact-option
+          a(href=contact.info.website.href, target="_blank") #{contact.info.website.label}
+        div.contact-option
+          a(href=contact.info.github.href, target="_blank") #{contact.info.github.label}
     - var summary = page.metadata.summary
     div#summary
       each bullet in summary.entries
@@ -69,6 +72,19 @@ block content
           div
             h4
               a(href=entry.href, target="_blank") !{entry.label}
+            - var bullets = entry.entries
+              ul
+                each bullet in bullets
+                  li !{bullet.value}
+    hr
+    - var interests = page.metadata.interests
+    div#interests.row
+      div.col-sm-5.sidebar
+        h3!= interests.label
+      div.col-sm-19
+        each entry in interests.entries
+          div
+            h4 !{entry.label}
             - var bullets = entry.entries
               ul
                 each bullet in bullets

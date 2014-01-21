@@ -14,8 +14,8 @@
       "description": "I study Math at the University of Waterloo, I write code for companies (Bazaarvoice, Tagged) and sometimes for myself also. Currently I live in San Francisco, but my whereabouts seem prone to changing frequently",
 
       "email": {
-        "label": "jmercer@uwaterloo.ca",
-        "href": "mailto:jmercer@uwaterloo.ca"
+        "label": "joe.mercer@uwaterloo.ca",
+        "href": "mailto:joe.mercer@uwaterloo.ca"
       },
       "twitter": {
         "label": "@jomrcr",
@@ -27,8 +27,13 @@
       },
 
       "github": {
-        "label": "GitHub",
+        "label": "github.com/joemercer",
         "href": "https://github.com/joemercer"
+      },
+
+      "website": {
+        "label": "joemercer.com",
+        "href": "http://joemercer.com/"
       },
 
       "uWaterloo": {
@@ -46,28 +51,28 @@
     "maxEntries": 5,
     "entries": [
       {
-        "word": "Experienced",
-        "value": "Full stack Javascript programmer well acquainted with modern web technologies and paradigms",
+        "word": "Fearless",
+        "value": "Open minded problem solver willing to tackle intimidating problems by exploring new and creative solutions; fond of adventure, be it in thought or practice",
+        "lastDateUpdated": "2013-09-03",
+        "dateAdded": "2013-09-03",
+        "tags": ["default", "personality"],
+        "importance": 100
+      },
+      {
+        "word": "Nimble",
+        "value": "Energetic learner quick to make connections between abstract concepts and keen to expand in both breadth and depth; highly adaptable in ever changing technical environments, quick to strike at new opportunities, and adept at finding a niche",
+        "lastDateUpdated": "2013-09-03",
+        "dateAdded": "2013-09-03",
+        "tags": ["default", "personality"],
+        "importance": 100
+      },
+      {
+        "word": "Passionate",
+        "value": "Full stack JavaScript engineer with both personal and professional experience; I write programs that take dreams and turn them into reality",
         "dateAdded": "2013-09-03",
         "lastDateUpdated": "2013-09-03",
         "tags": ["default", "javascript", "front-end"],
         "importance": 200
-      },
-      {
-        "word": "Nimble",
-        "value": "Self-motivated, self-starter comfortable working independently or as part of a team; accustomed to taking initiative and managing multiple projects simultaneously",
-        "lastDateUpdated": "2013-09-03",
-        "dateAdded": "2013-09-03",
-        "tags": ["default", "personality"],
-        "importance": 100
-      },
-      {
-        "word": "Fearless",
-        "value": "Fearless problem solver willing to tackle intimidating problems by exploring new and creative solutions; highly adaptable in quick-changing technical environments",
-        "lastDateUpdated": "2013-09-03",
-        "dateAdded": "2013-09-03",
-        "tags": ["default", "personality"],
-        "importance": 100
       }
     ]
   },
@@ -92,7 +97,14 @@
         "program": "Computer Science",
         "startDate": "September, 2011",
         "endDate": "Present",
-        "entries": []
+        "entries": [
+          {
+            "value": "University of Waterloo President's Scholarship of Distinction (awarded to students with a minimum 95% entrance average)"
+          },
+          {
+            "value": "First in Class Engineering Scholarship (previously in Management Engineering)"
+          }
+        ]
       }
     ]
   },
@@ -119,26 +131,52 @@
         "startDate": "September, 2013",
         "endDate": "December, 2013",
         "description": "Hi, my name is joe mercer and I worked at Tagged. While I was there I did some ipsum stuff and some programming. You know, all that good stuff. It was sweet.",
+        "tools": [
+          "JavaScript",
+          "Ember",
+          "Angular",
+          "RequireJS",
+          "jQuery",
+          "CSS",
+          "LESS",
+          "Bootstrap",
+          "FontAwesome",
+          "HTML",
+          "Handlebars",
+          "Grunt",
+          "Git"
+        ],
         "entries": [
           {
-            "word": "JavaScript",
-            "value": "Rewrote UI functionality to meet W3C web accessibility requirements",
+            "value": "Shipped code on my first day and on my last",
             "dateAdded": "2013-09-03",
             "lastDateUpdated": "2013-09-03",
             "tags": ["default", "javascript", "front-end"],
             "importance": 200
           },
           {
-            "word": "CSS",
-            "value": "Developed features: tag filter, review attribution statement, and others",
+            "value": "Helped build and optimize the realtime Messaging application (using the XMPP protocol and Strophe.js) and frontend (using Ember.js, RequireJS, Handlebars.js) currently handling over 30 million messages a month",
             "lastDateUpdated": "2013-09-03",
             "dateAdded": "2013-09-03",
             "tags": ["default"],
             "importance": 100
           },
           {
-            "word": "Motorcycle",
-            "value": "Utilized a variety of server and client-side JavaScript technologies including Node.js, Backbone, and Handlebars",
+            "value": "Helped build and optimize the Newsfeed application (using AngularJS, RequireJS, RSVP.js)",
+            "lastDateUpdated": "2013-09-03",
+            "dateAdded": "2013-09-03",
+            "tags": ["default"],
+            "importance": 100
+          },
+          {
+            "value": "Added tests (using Karma and Mocha) - 95% code coverage for all shipped code",
+            "lastDateUpdated": "2013-09-03",
+            "dateAdded": "2013-09-03",
+            "tags": ["default"],
+            "importance": 100
+          },
+          {
+            "value": "Helped conceptualize and build a CSS framework (using LESS, extending from Twitter Bootstrap) to implement the Tagged redesign (not live yet, still in beta testing)",
             "lastDateUpdated": "2013-09-03",
             "dateAdded": "2013-09-03",
             "tags": ["default"],
@@ -163,28 +201,35 @@
         "endDate": "May, 2013",
         "entries": [
           {
-            "value": "Rewrote UI functionality to meet W3C web accessibility requirements",
+            "value": "Helped build a custom MVC framework (extending from Backbone.js) to organize and optimize the Bazaarvoice frontend",
             "dateAdded": "2013-09-03",
             "lastDateUpdated": "2013-09-03",
             "tags": ["default", "javascript", "front-end"],
             "importance": 200
           },
           {
-            "value": "Developed features: tag filter, review attribution statement, and others",
+            "value": "Rewrote UI functionality to meet W3C accessibility standards (using jQuery and CSS) - a core requirement in upgrading the first top ten client",
+            "dateAdded": "2013-09-03",
+            "lastDateUpdated": "2013-09-03",
+            "tags": ["default", "javascript", "front-end"],
+            "importance": 200
+          },
+          {
+            "value": "Helped integrate Bazaarvoice services in a Node.js backend",
             "lastDateUpdated": "2013-09-03",
             "dateAdded": "2013-09-03",
             "tags": ["default"],
             "importance": 100
           },
           {
-            "value": "Utilized a variety of server and client-side JavaScript technologies including Node.js, Backbone, and Handlebars",
+            "value": "Implemented template precompilation (using Grunt, Node.js and Handlebars.js) on the backend",
             "lastDateUpdated": "2013-09-03",
             "dateAdded": "2013-09-03",
             "tags": ["default"],
             "importance": 100
           },
           {
-            "value": "Followed the test-driven development model by using the Mocha and Expresso JavaScript testing frameworks",
+            "value": "Added unit tests (using Expresso and Mocha) on both the frontend and the backend",
             "lastDateUpdated": "2013-09-03",
             "dateAdded": "2013-09-03",
             "tags": ["default"],
@@ -223,97 +268,6 @@
             "importance": 100
           }
         ]
-      },
-      {
-        "dateAdded": "2013-09-03",
-        "lastDateUpdated": "2013-09-03",
-        "tags": ["C#", "back-end"],
-        "importance": 200,
-        "minEntries": 2,
-        "maxEntries": 5,
-        "position": "ASP.NET Server Programmer",
-        "company": {
-          "label": "NextBestSong"
-        },
-        "location": "Redmond, WA",
-        "startDate": "March, 2012",
-        "endDate": "September, 2012",
-        "entries": [
-          {
-            "value": "Designed and built an ASP.NET web application that uses song metadata to help users create custom playlists",
-            "dateAdded": "2013-09-03",
-            "lastDateUpdated": "2013-09-03",
-            "tags": ["default"],
-            "importance": 200
-          },
-          {
-            "value": "Developed a web service API to support browser-based AJAX calls",
-            "lastDateUpdated": "2013-09-03",
-            "dateAdded": "2013-09-03",
-            "tags": ["default"],
-            "importance": 100
-          },
-          {
-            "value": "Established and maintained a SQL Server database using LINQ to SQL",
-            "lastDateUpdated": "2013-09-03",
-            "dateAdded": "2013-09-03",
-            "tags": ["default"],
-            "importance": 100
-          },
-          {
-            "value": "Hosted a SQL Server database in the cloud using Amazon web services",
-            "lastDateUpdated": "2013-09-03",
-            "dateAdded": "2013-09-03",
-            "tags": ["default"],
-            "importance": 100
-          }
-        ]
-      },
-      {
-        "text": "NextBestSong",
-        "dateAdded": "2013-09-03",
-        "lastDateUpdated": "2013-09-03",
-        "tags": ["program management", "scrum"],
-        "importance": 200,
-        "minEntries": 2,
-        "maxEntries": 5,
-        "position": "SCRUM Master",
-        "company": {
-          "label": "NextBestSong"
-        },
-        "location": "Redmond, WA",
-        "startDate": "March, 2012",
-        "endDate": "September, 2012",
-        "entries": [
-          {
-            "value": "Managed a three person team using the SCRUM methodology",
-            "dateAdded": "2013-09-03",
-            "lastDateUpdated": "2013-09-03",
-            "tags": ["default"],
-            "importance": 200
-          },
-          {
-            "value": "Defined product vision and product evolution by creating specific use-case scenarios",
-            "lastDateUpdated": "2013-09-03",
-            "dateAdded": "2013-09-03",
-            "tags": ["default"],
-            "importance": 100
-          },
-          {
-            "value": "Organized team strategy by setting short term goals and delegating tasks",
-            "lastDateUpdated": "2013-09-03",
-            "dateAdded": "2013-09-03",
-            "tags": ["default"],
-            "importance": 100
-          },
-          {
-            "value": "Lead daily stand-up meetings to ensure work progressed on schedule",
-            "lastDateUpdated": "2013-09-03",
-            "dateAdded": "2013-09-03",
-            "tags": ["default"],
-            "importance": 100
-          }
-        ]
       }
     ]
   },
@@ -325,85 +279,79 @@
     "maxEntries": 4,
     "entries": [
       {
+        "label": "Stachetag",
+        "href": "https://github.com/joemercer/stachetag",
+        "entries": [
+          {
+            "value": "Hacked the Twitter stream API to create the Stachetag, \"{...}\", which formats and stashes arbitrary Tweet content in MongoDB to be programatically accessed later"
+          },
+          {
+            "value": "Stachetag is thus named because it both stashes data and looks like a mustache"
+          },
+          {
+            "value": "Wrote the application in Node.js using the Express framework and hosted it using Heroku"
+          }
+        ]
+      },
+      {
+        "label": "Golden",
+        "href": "http://joemercer.github.io/golden/",
+        "code": "https://github.com/joemercer/golden",
+        "entries": [
+          {
+            "value": "Fully documented open source CSS framework based on the Golden ratio"
+          },
+          {
+            "value": "Written in LESS and inspired by the Twitter Bootstrap architecture"
+          }
+        ]
+      },
+      {
+        "label": "iClickr",
+        "href": "http://iClickr.meteor.com/",
+        "code": "https://github.com/joemercer/iclicker",
+        "entries": [
+          {
+            "value": "Created a realtime responsive web application using the Meteor.js framework to replace the iClicker, a classroom polling tool used at the University of Waterloo"
+          },
+          {
+            "value": "Enables users to create and join groups, pose questions to their groups, and display the answers"
+          }
+        ]
+      },
+      {
+        "label": "Tag with Tags",
+        "href": "http://taggedtag.meteor.com/",
+        "code": "https://github.com/joemercer/tagged-tag",
+        "entries": [
+          {
+            "value": "Created a web application for the Tagged Hackathon that enables users to play Tag with Tags"
+          },
+          {
+            "value": "Simple gamification incentivizes users to tag each other, and the data collected can be used to analyze the relationships between users"
+          }
+        ]
+      },
+      {
         "label": "Sweet Like The Jam",
-        "dateAdded": "2013-09-03",
-        "lastDateUpdated": "2013-09-03",
-        "tags": ["default", "javascript", "front-end"],
-        "importance": 200,
-        "minEntries": 2,
-        "maxEntries": 5,
-        "name": "Sweet Like The Jam",
-        "startDate": "March, 2012",
-        "endDate": "current",
+        "href": "http://jam-music2.s3-website-us-east-1.amazonaws.com/",
+        "code": "https://github.com/joemercer/music2",
         "entries": [
           {
-            "value": "Developed a static AngularJS application that plays songs recommended by LastFM in an in-page Youtube player",
-            "dateAdded": "2013-09-03",
-            "lastDateUpdated": "2013-09-03",
-            "tags": ["default", "javascript", "front-end"],
-            "importance": 200
+            "value": "Developed a music player application frontend using the Youtube and LastFM APIs in AngularJS, Meteor.js, and Backbone.js to compare their differences"
           },
           {
-            "value": "Hosted the application using Amazon S3",
-            "lastDateUpdated": "2013-09-03",
-            "dateAdded": "2013-09-03",
-            "tags": ["default"],
-            "importance": 100
-          }
-        ]
-      },
-      {
-        "label": "Tag Trees",
-        "dateAdded": "2013-09-03",
-        "lastDateUpdated": "2013-09-03",
-        "tags": ["default", "javascript", "front-end"],
-        "importance": 200,
-        "minEntries": 2,
-        "maxEntries": 5,
-        "name": "Tag Trees",
-        "startDate": "September, 2012",
-        "entries": [
-          {
-            "value": "Developed a C# program that defined hierarchical relationships between song tags by arranging them in a custom \"tree\" structure",
-            "dateAdded": "2013-09-03",
-            "lastDateUpdated": "2013-09-03",
-            "tags": ["default", "javascript", "front-end"],
-            "importance": 200
+            "value": "Developed a music recommendation engine in C# based on analyzing song metadata"
           },
           {
-            "value": "Hosted the application using Amazon S3",
-            "lastDateUpdated": "2013-09-03",
-            "dateAdded": "2013-09-03",
-            "tags": ["default"],
-            "importance": 100
-          }
-        ]
-      },
-      {
-        "label": "Supply Chain Analysis",
-        "dateAdded": "2013-09-03",
-        "lastDateUpdated": "2013-09-03",
-        "tags": ["default"],
-        "importance": 200,
-        "minEntries": 2,
-        "maxEntries": 5,
-        "name": "Supply Chain Analysis",
-        "location": "Waterloo, ON",
-        "startDate": "December, 2011",
-        "entries": [
-          {
-            "value": "Developed a forecasting system to predict demand for stages in a supply chain",
-            "dateAdded": "2013-09-03",
-            "lastDateUpdated": "2013-09-03",
-            "tags": ["default", "javascript", "front-end"],
-            "importance": 200
+            "value": "Created custom prediction heuristics by arranging common musical classification tags in a tree structure"
           }
         ]
       }
     ]
   },
   "awards": {
-    "text": "Awards",
+    "label": "Awards",
     "dateAdded": "2013-09-03",
     "lastDateUpdated": "2013-09-03",
     "tags": ["default"],
@@ -429,6 +377,34 @@
             "lastDateUpdated": "2013-09-03",
             "tags": ["default"],
             "importance": 200
+          }
+        ]
+      }
+    ]
+  },
+  "interests": {
+    "label": "Interests",
+    "entries": [
+      {
+        "label": "Stuff I did when I wasn't programming",
+        "entries": [
+          {
+            "value": "Started playing the ukulele"
+          },
+          {
+            "value": "Ran a half marathon (my time was 1:45)"
+          },
+          {
+            "value": "Tried every taco at both Torchy's and Tacodeli in Austin"
+          },
+          {
+            "value": "Backpacked across Europe (from Paris to Athens)"
+          },
+          {
+            "value": "DJ'd casual high school dances and events"
+          },
+          {
+            "value": "Played varsity basketball in high school"
           }
         ]
       }

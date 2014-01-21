@@ -55,14 +55,32 @@
 	color: @golden-gray-light;
 }
 
-@media (min-width: (@screen-sm-min / 2)) {
+h1.name {
+	display: block;
+}
+
+a.twitter {
+	display: inline-block;
+	font-size: @golden-font-size-base;
+	font-weight: normal;
+	padding-left: 0px;
+}
+
+@media (min-width: (@screen-sm-min * (3 / 4))) {
 	.contact-option {
 		display: inline-block;
 		padding-left: @golden-line-height-computed / 4;
 		padding-right: @golden-line-height-computed / 4;
 	}
+	h1.name {
+		display: inline-block;
+	}
+	a.twitter {
+		font-size: @golden-font-size-h3;
+		font-weight: bold;
+		padding-left: @golden-line-height-computed / 2;
+	}
 }
-
 
 .sidebar {
 	color: @golden-gray-dark;

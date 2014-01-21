@@ -2665,11 +2665,28 @@ td.visible-print {
   padding-right: 0px;
   color: #c3c3c3;
 }
-@media (min-width: 384px) {
+h1.name {
+  display: block;
+}
+a.twitter {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: normal;
+  padding-left: 0px;
+}
+@media (min-width: 576px) {
   .contact-option {
     display: inline-block;
     padding-left: 6.25px;
     padding-right: 6.25px;
+  }
+  h1.name {
+    display: inline-block;
+  }
+  a.twitter {
+    font-size: 26px;
+    font-weight: bold;
+    padding-left: 12.5px;
   }
 }
 .sidebar {
