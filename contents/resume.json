@@ -283,7 +283,7 @@
         "href": "https://github.com/joemercer/stachetag",
         "entries": [
           {
-            "value": "Hacked the Twitter stream API to create the Stachetag, \"{...}\", which formats and stashes arbitrary Tweet content in MongoDB to be programatically accessed later"
+            "value": "Hacked the Twitter stream API to create the Stachetag, \"{...}\", which formats and stashes arbitrary Tweet content in MongoDB to be programmatically accessed later"
           },
           {
             "value": "Stachetag is thus named because it both stashes data and looks like a mustache"
