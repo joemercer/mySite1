@@ -222,7 +222,7 @@
             "importance": 100
           },
           {
-            "value": "Implemented template precompilation (using Grunt, Node.js and Handlebars.js) on the backend",
+            "value": "Implemented template precompilation (using Grunt, Node.js and Handlebars.js)",
             "lastDateUpdated": "2013-09-03",
             "dateAdded": "2013-09-03",
             "tags": ["default"],
