@@ -1,0 +1,205 @@
+// Bootstrap
+// _________
+
+// Core variables and mixins
+@import "../libs/bootstrap/less/variables.less";
+@import "../libs/bootstrap/less/mixins.less";
+
+// Custom Variables
+@import "custom-blog-variables.less";
+
+// Reset
+// @import "../libs/bootstrap/less/normalize.less";
+@import "../libs/bootstrap/less/print.less";
+
+// Core CSS
+@import "../libs/bootstrap/less/scaffolding.less";
+@import "../libs/bootstrap/less/type.less";
+// @import "../libs/bootstrap/less/code.less";
+@import "../libs/bootstrap/less/grid.less";
+// @import "../libs/bootstrap/less/tables.less";
+// @import "../libs/bootstrap/less/forms.less";
+// @import "../libs/bootstrap/less/buttons.less";
+
+// Utility classes
+@import "../libs/bootstrap/less/utilities.less";
+@import "../libs/bootstrap/less/responsive-utilities.less";
+
+// Golden
+// _________
+
+@import "../libs/golden/variables.less";
+@import "../libs/golden/mixins.less";
+// @import "../libs/golden/grid.less";
+// @import "../libs/golden/content.less";
+
+.golden {
+	@font-size-base: 18px;
+
+	@import "../libs/golden/variables.less";
+	@import "../libs/golden/bootstrap-variable-overrides.less";
+
+	@import "../libs/golden/scaffolding.less";
+	@import "../libs/golden/type.less";
+
+	@import "../libs/golden/content.less";
+}
+
+// Other CSS Libraries
+// ___________________
+
+@import "highlight-code.less";
+
+// Custom Blog Styles
+// __________________
+
+@import "main.less";
+
+// general styles
+
+body.golden {
+	margin: 0px;
+}
+
+.golden-content {
+	padding: 0px (@golden-line-height-computed / 2) !important;
+}
+
+h1, h2, h3 {
+	word-wrap: break-word;
+}
+
+// header
+
+.blog-header {
+	text-align: center;
+
+	img {
+		margin-top: @golden-line-height-computed;
+		margin-bottom: @golden-line-height-computed / 2;
+
+		height: 228px;
+		width: 228px;
+	}
+}
+
+.blog-summary-container {
+	margin: (2 * @golden-line-height-computed) auto;
+
+	.blog-summary {
+		border-top: 1px solid @golden-gray-light;
+		border-bottom: 1px solid @golden-gray-light;
+		padding: (@golden-line-height-computed / 2) 0px;
+	}
+}
+
+.article.intro {
+	header {
+		text-align: center;
+	}
+}
+
+.pagination {
+	text-align: center;
+
+	a {
+		padding: 0px (@golden-line-height-computed / 2);
+	}
+}
+
+@media (max-width: (@screen-sm-min - 1)) {
+  .golden .golden-content {
+  	
+  	section.article-content {
+  		font-size: @golden-font-size-large;
+  	}
+
+  	h1 {
+	  	font-size: @golden-font-size-h2 + ((@golden-font-size-h1 - @golden-font-size-h2) / 2);
+	  }
+	  h1.blog-title {
+	  	font-size: @golden-font-size-h1;
+	  }
+	  h2 {
+	  	font-size: @golden-font-size-h3 + ((@golden-font-size-h2 - @golden-font-size-h3) / 2);
+	  }
+	  h3 {
+	  	font-size: @golden-font-size-h4 + ((@golden-font-size-h3 - @golden-font-size-h4) / 2);
+	  }
+  }
+}
+
+// change this probably
+.blog-summary, .more, .date {
+  font-family: 'Merriweather', serif;
+  font-variant: small-caps;
+  text-transform: lowercase;
+  font-weight: 400;
+  text-rendering: auto;
+  letter-spacing: 1px;
+
+  i {
+  	font-variant: normal;
+  }
+}
+
+// copied from the original styles for wintersmith blog
+
+/* archive */
+
+.archive {
+	text-align: center;
+}
+
+.archive ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  p, h3, h4 {
+  	width: 100%;
+  	text-align: center;
+  }
+
+  h4 {
+  	padding-left: 50px;
+  }
+
+  li {
+  	text-align: center;
+  }
+}
+
+.archive .year-label,
+.archive .month-label{
+  width: 4em;
+  font-family: 'Merriweather', serif;
+  font-variant: small-caps;
+  text-transform: lowercase;
+  font-weight: 400;
+  text-rendering: auto;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+/* code styling */
+
+code {
+  font-family: 'Anonymous Pro', monospace;
+  font-size: 0.85em;
+  color: #000;
+}
+
+pre code {
+  display: block;
+  line-height: 1.1;
+}
+
+p code {
+  padding: 0.1em 0.3em 0.2em;
+  border-radius: 0.3em;
+  position: relative;
+  top: -0.15em;
+  background: #444;
+  color: #fff;
+  white-space: nowrap;
+}

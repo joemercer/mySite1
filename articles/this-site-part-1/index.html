@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width" initial-scale="1">
+    <title>This Site - Part 1 - Joe Mercer
+    </title>
+    <link rel="alternate" href="http://localhost:8080/feed.xml" type="application/rss+xml" title="Designer and Developer">
+    <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic|Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic|Merriweather:400,300,300italic,400italic,700,700italic,900,900italic" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+    <link rel="stylesheet" href="/css/blog.css">
+  </head>
+  <body class="golden">
+    <header class="blog-header golden-content center-block">
+      <h1>This Site - Part 1</h1>
+      <div class="blog-summary-container">
+        <p class="blog-summary">08. January 2014<br>Written by <span class="author"><a href="https://twitter.com/jomrcr">@jomrcr</a></span>
+        </p>
+      </div>
+    </header>
+    <div class="golden-content center-block">
+      <article class="article">
+        <section class="article-content"><p>This website is created using a static site generator called <a href="http://wintersmith.io/">Wintersmith</a>. For those in the know, Wintersmith is kind of like <a href="http://jekyllrb.com/">Jekyll</a> but built with JavaScript on Nodejs instead of with Ruby on Rails. As a full-stack JavaScript programmer myself, this seemed like the perfect&nbsp;solution.</p>
+<p><span class="more"></span></p>
+<p>So far, I’ve found that static site generators provide two useful&nbsp;functions:</p>
+<p>First, they provide a web server for hosting your website locally (which is helpful for development). As you might be able to expect, Wintersmith uses <a href="http://nodejs.org/">Nodejs</a> as its local web server, and so far it’s worked perfectly out of the box. To get it started just run the <code>wintersmith preview</code> command.</p>
+<p>Second, they include templating. By default, Wintersmith uses <a href="http://jade-lang.com/">Jade</a> for templating and either <a href="http://daringfireball.net/projects/markdown/">Markdown</a> or <a href="http://www.json.org/"><span class="caps">JSON</span></a> for content. Jade was new to me, and I’m not completely sold on it yet. Yes, Jade is much quicker than writing plain <span class="caps">HTML</span> (or a templating language like Handlebars that doesn’t abstract away the HTML), but when using extends and blocks it’s reliance on indentation can get confusing. To make debugging even more difficult, I’ve found that the documentation for Jade tends to lag behind its full feature set. Regardless, part of the reason I’m making this website is to experience new technologies so I’m going to stick with it for now. I’ve been using Markdown for a while now in the context of Github, and I am completely sold on using it more. Markdown is a text to HTML converter that stores it’s plain text in an easy to read format. Markdown works great for content sections, like this article, but when you need access to content in a more data-y fashion, Wintersmith also supports using&nbsp;JSON.</p>
+<p>After choosing Wintersmith as my framework, my second step was to push what little I had of my website live. As I was researching different hosting solutions my main goals were to find something cheap and quick. After shopping around I decided to host the website on <a href="http://pages.github.com/">Github Pages</a>, and use <a href="http://wercker.com/">Wercker</a> as the delivery platform following <a href="http://luke.vivier.ca/wintersmith-with-wercker/">this blog post</a>.</p>
+<p>Using Github Pages to host my website is nice because I’m already using Github to host the code. Everything can be found in one compact area. The only hiccup came along when I decided to create a Github personal page instead of project page. I did this because the personal pages make to username.github.io instead of username.github.io/project, and I like conserving space. Other than the url, the only difference between a personal page and a product page is that a personal page is build out of the master branch whereas a project page is built out of the gh-pages branch. As a result I’ve created a stage branch that would serve the normal purpose of the master&nbsp;branch.</p>
+<p>Wercker is an awesome tool that lets you define build and deployment steps that run off in the cloud. Right now I’m just using it to run the <code>wintersmith build</code> command, and then push the built assets to the master branch, but eventually I’ll add in asset minification and other&nbsp;goodies.</p>
+<p>The brilliant part of everything is that my workflow is dead&nbsp;simple:</p>
+<ol>
+<li>Branch off of&nbsp;stage</li>
+<li>Work</li>
+<li>Merge feature branch into&nbsp;stage</li>
+<li>Done - Wercker handles building the website and pushing it to the correct location so at this point I can see my changes live on my&nbsp;website</li>
+</ol>
+<p>After pushing everything live, my third step was writing this blog article :&nbsp;)</p>
+<p>Next I need to incorporate some additional pages, including a resume, and begin custom styling. I’ll write about this experience in Part 2 of this&nbsp;series. </p>
+</section>
+      </article>
+    </div>
+    <div class="pagination"><a href="/blog.html">« Full blog</a></div>
+    <footer class="main-footer">
+      <section class="copy">
+        <p>&copy; 2014 Joe Mercer. All rights reserved.</p>
+      </section>
+    </footer>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  </body>
+</html>
