@@ -1,5 +1,5 @@
 ---
-title: Hackathon Game Plan
+title: Choosing a Team
 author: joemercer
 date: 2014-02-08 01:00
 template: article.jade
