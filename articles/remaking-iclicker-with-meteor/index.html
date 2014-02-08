@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width" initial-scale="1">
+    <title>Remaking iClicker with Meteor - Joe Mercer
+    </title>
+    <link rel="alternate" href="http://localhost:8080/feed.xml" type="application/rss+xml" title="Designer and Developer">
+    <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic|Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic|Merriweather:400,300,300italic,400italic,700,700italic,900,900italic" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+    <link rel="stylesheet" href="/css/blog.css">
+  </head>
+  <body class="golden">
+    <header class="blog-header golden-content center-block">
+      <h1>Remaking iClicker with Meteor</h1>
+      <div class="blog-summary-container">
+        <p class="blog-summary">12. January 2014<br>Written by <span class="author"><a href="https://twitter.com/jomrcr">@jomrcr</a></span>
+        </p>
+      </div>
+    </header>
+    <div class="golden-content center-block">
+      <article class="article">
+        <section class="article-content"><p>For the 11<span class="ord">th</span> UWaterloo Software Engineering hack day I decided to work with my friend Nicole to make a multi-platform responsive web app that could replace the pesky iClickers that first year students are required to waste $40&nbsp;on.</p>
+<p><span class="more"></span></p>
+<p>I always find programming easier in the abstract however so we ended up building more of a multi-platform, responsive, reactive, realtime virtual classroom. There are many potential features. For example, the stoplight idea, where students can be in one of three states, green, yellow, and red, to indicate whether the prof should continue, slow down, or stop. Another feature would be allowing profs to ask questions to their students and then collect those answers back in realtime and display them on charts. Another feature would be to enable students to post comments and questions in a chatroom and then potentially answer one another’s questions without having to stop the flow of a lecture by asking a&nbsp;question.</p>
+<p>Since this was a Hackathon we only had a day to make this application, but we wanted to make it a full-fledged application (not just a series of screenshots and a flashy presentation). Nicole has experience with design and I have experience with full stack JavaScript architectures and between the two of us we have the skills to build a legitimate app in a&nbsp;day.</p>
+<p>To do this we decided to use Meteor js, which is a framework for building web apps super quickly. It comes with it’s downsides, one of which is being super opinionated and particular when it comes to doing front-end things (which can prevent you from being able to do them in the traditional style), but it also comes with many huge benefits. One of these benefits is to provide data connectivity throughout the entire stack, from database to client. Another is to provide an easy hosting solution. I could keep going on, but I&nbsp;won’t.</p>
+<p>We didn’t end up finishing our app, mainly due to problems with integrating design mock ups and Meteor functionality. We did finish a full set of design mock ups, and a fully working (but unstyled) Meteor application. Hopefully we can carve out some time in the future to bind them&nbsp;together.</p>
+<p>In the course of building this project I learned more about the Meteor Accounts system with the help of this <a href="https://www.eventedmind.com/feed/97d0164c-8f71-46fe-819b-df8df3704546">screencast</a> and this <a href="http://meteorhacks.com/extending-meteor-accounts.html">tutorial</a>. I also got more practice with structuring Meteor apps, especially from a server-side&nbsp;perspective.</p>
+<p>I’ll try to remember to update this with a link to the hosted website when it’s finished. For now, the code can be found on <a href="https://github.com/joemercer/iclicker">github</a>.</p>
+</section>
+      </article>
+    </div>
+    <div class="pagination"><a href="/blog.html">« Full blog</a></div>
+    <footer class="main-footer">
+      <section class="copy">
+        <p>&copy; 2014 Joe Mercer. All rights reserved.</p>
+      </section>
+    </footer>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  </body>
+</html>

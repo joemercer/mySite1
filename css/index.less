@@ -1,0 +1,189 @@
+@import "custom-bootstrap.less";
+
+@import "../libs/golden/variables.less";
+@import "../libs/golden/mixins.less";
+
+@import "../libs/golden/content.less";
+@import "../libs/golden/grid.less";
+
+@import "../libs/golden/bootstrap-variable-overrides.less";
+
+// # Splash
+// ________
+
+#splash {
+	height: @golden-line-height-computed * 24;
+	z-index: 5;
+	position: relative;
+
+	background-color: #FFF;
+}
+
+#splash .splash-background {
+		width: 100%;
+    height: 100%;
+    z-index: 6;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background: url('../images/splash-background.jpg') no-repeat center center;
+	  -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  -o-background-size: cover;
+	  background-size: cover;
+
+    opacity : 0.5;
+}
+
+#splash .splash-content {
+	width: 100%;
+  height: 100%;
+	z-index: 10;
+	position: absolute;
+	top: 0;
+  left: 0;
+
+  .intro {
+		text-align: center;
+		padding-top: @golden-line-height-computed * 4;
+
+		.golden-content {
+			background-color: rgba(255, 255, 255, .3);
+			border-radius: 12px;
+		}
+
+		h1 {
+
+		}
+
+		p {
+			text-align: left;
+		}
+
+		img {
+			margin-top: @golden-line-height-computed;
+			margin-bottom: (@golden-line-height-computed / 2);
+		}
+  }
+}
+
+// # Nav
+
+@nav-height: (1.5 * @golden-line-height-computed);
+@nav-item-horizontal-spacing: @golden-line-height-computed;
+@nav-vertical-margin: @golden-line-height-computed;
+
+.nav-container {
+	width: 100%;
+  height: @nav-height;
+  margin: @nav-vertical-margin 0px;
+  text-align: center;
+
+  position: absolute;
+  bottom: 0px;
+}
+
+.nav {
+	display: inline-block;
+  padding: 0px @nav-item-horizontal-spacing;
+}
+
+.nav-item,
+.nav-item a {
+  display: inline-block;
+  line-height: @nav-height;
+  padding: 0px @nav-item-horizontal-spacing;
+
+  font-family: @headings-font-family;
+  color: @golden-gray-dark;
+  font-size: @golden-font-size-large;
+
+  &:hover,
+  &.active {
+  	color: @brand-primary;
+  	font-weight: bold;
+  	text-decoration: none;
+  }
+}
+
+// # Nav-Main
+
+.nav-container {
+	.nav {
+		border-top: 1px solid @golden-gray;
+		border-bottom: 1px solid @golden-gray;
+	}
+}
+
+// # Nav-Fixed
+
+.nav-container.fixed {
+	position: fixed;
+	top: 0px;
+	z-index: 1000;
+	margin: 0px;
+	background-color: @golden-gray-dark;
+	color: @golden-gray-lightest;
+
+	.nav-item a {
+		color: @golden-gray-lightest;
+
+		&.active {
+	  	color: @brand-primary;
+	  }
+	}
+
+	.nav {
+		border: none;
+	}
+
+}
+
+// # Content
+// _________
+
+#content {
+
+	img {
+		padding-top: (@golden-line-height-computed / 2);
+		padding-bottom: @golden-line-height-computed;
+	}
+
+
+}
+
+// # Content Tabs
+// ______
+
+#content .tab-section {
+	display: none;
+
+	&.active {
+		display: block;
+	}
+}
+
+
+// # Footer
+// ________
+
+.main-footer {
+  margin: (1.5 * @line-height-computed) 0px;
+}
+
+.copy {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+// # Utility
+// _________
+
+.img-full {
+	width: 68%;
+}
+
+.img-container-center {
+	text-align: center;
+}
